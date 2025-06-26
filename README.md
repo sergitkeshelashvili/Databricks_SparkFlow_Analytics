@@ -4,6 +4,7 @@ Welcome to the Data Warehouse and Analytics Project! 🚀
 This portfolio project showcases a modern data warehousing and analytics solution, demonstrating best practices in data engineering and analytics. It covers the entire process, from building a data warehouse to generating actionable business insights.
 
 
+
 🏗️ Data Architecture
 
 The project adopts the Medallion Architecture, organizing data into three layers:
@@ -11,6 +12,7 @@ The project adopts the Medallion Architecture, organizing data into three layers
 Bronze Layer: Stores raw, unprocessed data ingested from source systems (CSV files) into a PostgreSQL Server database.
 Silver Layer: Cleanses, standardizes, and normalizes data to prepare it for analysis.
 Gold Layer: Provides business-ready data modeled into a star schema optimized for reporting and analytics.
+
 
 
 📖 Project Overview
@@ -22,6 +24,7 @@ ETL Pipelines: Extracting, transforming, and loading data from source systems in
 Data Modeling: Creating fact and dimension tables for efficient analytical queries.
 Analytics & Reporting: Building SQL-based reports and dashboards to deliver actionable insights.
 
+
 🎯 This repository is ideal for professionals and students aiming to demonstrate expertise in:
 
 SQL Development
@@ -30,6 +33,7 @@ Data Engineering
 ETL Pipeline Development
 Data Modeling
 Data Analytics
+
 
 🚀 Project Requirements
 
@@ -47,7 +51,7 @@ Scope: Focus on the latest dataset; historical data storage is not required.
 Documentation: Provide clear documentation of the data model for business and analytics teams.
 
 
-Data Analysis: BI, Analytics & Reporting
+📈​ Data Analysis: BI, Analytics & Reporting
 
 Objective
 
@@ -58,31 +62,6 @@ Sales Trends
 
 These insights deliver key business metrics to support strategic decision-making.
 
-📂 Repository Structure
-
-data-warehouse-project/
-│
-├── datasets/                           # Raw ERP and CRM datasets
-│
-├── docs/                               # Documentation and architecture details
-│   ├── etl.drawio                      # ETL techniques and methods (Draw.io)
-│   ├── data_architecture.drawio        # Project architecture diagram (Draw.io)
-│   ├── data_catalog.md                 # Dataset field descriptions and metadata
-│   ├── data_flow.drawio                # Data flow diagram (Draw.io)
-│   ├── data_models.drawio              # Star schema data models (Draw.io)
-│   ├── naming-conventions.md           # Naming guidelines for tables, columns, and files
-│
-├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Scripts for raw data extraction and loading
-│   ├── silver/                         # Scripts for data cleansing and transformation
-│   ├── gold/                           # Scripts for creating analytical models
-│
-├── tests/                              # Test scripts and data quality checks
-│
-├── README.md                           # Project overview and instructions
-├── LICENSE                             # MIT License details
-├── .gitignore                          # Files and directories ignored by Git
-└── requirements.txt                    # Project dependencies
 
 
 🛡️ License
