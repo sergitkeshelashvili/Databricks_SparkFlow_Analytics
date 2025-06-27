@@ -22,6 +22,8 @@ Run the script in a PostgreSQL database to create the silver schema tables befor
 
 ### Script
 
+==================================================
+
 DROP TABLE IF EXISTS silver.crm_cust_info;
 CREATE TABLE silver.crm_cust_info (
     cst_id INT,
@@ -33,6 +35,8 @@ CREATE TABLE silver.crm_cust_info (
     cst_create_date DATE,
     dwh_create_date DATE DEFAULT CURRENT_DATE
 );
+
+==================================================
 
 DROP TABLE IF EXISTS silver.crm_prd_info;
 CREATE TABLE silver.crm_prd_info (
@@ -46,6 +50,8 @@ CREATE TABLE silver.crm_prd_info (
     prd_end_dt DATE,
 	dwh_create_date DATE DEFAULT CURRENT_DATE
 );
+
+==================================================
 
 DROP TABLE IF EXISTS silver.crm_sales_details;
 CREATE TABLE silver.crm_sales_details (
@@ -61,6 +67,8 @@ CREATE TABLE silver.crm_sales_details (
 	dwh_create_date DATE DEFAULT CURRENT_DATE
 );
 
+==================================================
+
 DROP TABLE IF EXISTS silver.erp_loc_a101;
 CREATE TABLE silver.erp_loc_a101 (
     cid VARCHAR(50),
@@ -68,6 +76,7 @@ CREATE TABLE silver.erp_loc_a101 (
 	dwh_create_date DATE DEFAULT CURRENT_DATE
 );
 
+==================================================
 
 DROP TABLE IF EXISTS silver.erp_cust_az12;
 CREATE TABLE silver.erp_cust_az12 (
@@ -77,6 +86,8 @@ CREATE TABLE silver.erp_cust_az12 (
 	dwh_create_date DATE DEFAULT CURRENT_DATE
 );
 
+==================================================
+
 DROP TABLE IF EXISTS silver.erp_px_cat_g1v2;
 CREATE TABLE silver.erp_px_cat_g1v2 (
     id VARCHAR(50),
@@ -85,6 +96,7 @@ CREATE TABLE silver.erp_px_cat_g1v2 (
     maintenance VARCHAR(50),
 	dwh_create_date DATE DEFAULT CURRENT_DATE
 );
+
 
 
 
