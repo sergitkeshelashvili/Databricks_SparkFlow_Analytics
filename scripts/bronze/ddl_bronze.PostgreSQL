@@ -21,6 +21,7 @@ Warning:
 */
 
 
+==================================================
 
 DROP TABLE IF EXISTS bronze.crm_cust_info;
 CREATE TABLE bronze.crm_cust_info (
@@ -33,6 +34,8 @@ CREATE TABLE bronze.crm_cust_info (
     cst_create_date DATE
 );
 
+==================================================
+
 DROP TABLE IF EXISTS bronze.crm_prd_info;
 CREATE TABLE bronze.crm_prd_info (
     prd_id INT,
@@ -43,6 +46,8 @@ CREATE TABLE bronze.crm_prd_info (
     prd_start_dt DATE,
     prd_end_dt DATE
 );
+
+==================================================
 
 DROP TABLE IF EXISTS bronze.crm_sales_details;
 CREATE TABLE bronze.crm_sales_details (
@@ -57,12 +62,15 @@ CREATE TABLE bronze.crm_sales_details (
     sls_price INT
 );
 
+==================================================
+
 DROP TABLE IF EXISTS bronze.erp_loc_a101;
 CREATE TABLE bronze.erp_loc_a101 (
     cid VARCHAR(50),
     cntry VARCHAR(50)
 );
 
+==================================================
 
 DROP TABLE IF EXISTS bronze.erp_cust_az12;
 CREATE TABLE bronze.erp_cust_az12 (
@@ -70,6 +78,8 @@ CREATE TABLE bronze.erp_cust_az12 (
     bdate DATE,
     gen VARCHAR(50)
 );
+
+==================================================
 
 DROP TABLE IF EXISTS bronze.erp_px_cat_g1v2;
 CREATE TABLE bronze.erp_px_cat_g1v2 (
@@ -80,12 +90,21 @@ CREATE TABLE bronze.erp_px_cat_g1v2 (
 );
 
 
--- Truncate and Import: crm_cust_info
+==================================================
+==================================================
+==================================================
+
+
+### Truncate and Import
+
+==================================================
 
 TRUNCATE TABLE bronze.crm_cust_info;
 \copy bronze.crm_cust_info 
 FROM 'C:/path/to/your/csv/cust_info.csv' 
 DELIMITER ',' CSV HEADER;
+
+==================================================
 
 -- Truncate and Import: crm_prd_info
 
@@ -94,12 +113,16 @@ TRUNCATE TABLE bronze.crm_prd_info;
 FROM 'C:/path/to/your/csv/prd_info.csv' 
 DELIMITER ',' CSV HEADER;
 
+==================================================
+
 -- Truncate and Import: crm_sales_details
 
 TRUNCATE TABLE bronze.crm_sales_details;
 \copy bronze.crm_sales_details 
 FROM 'C:/path/to/your/csv/sales_details.csv' 
 DELIMITER ',' CSV HEADER;
+
+==================================================
 
 -- Truncate and Import: erp_loc_a101
 
@@ -108,6 +131,8 @@ TRUNCATE TABLE bronze.erp_loc_a101;
 FROM 'C:/path/to/your/csv/loc_a101.csv' 
 DELIMITER ',' CSV HEADER;
 
+==================================================
+
 -- Truncate and Import: erp_cust_az12
 
 TRUNCATE TABLE bronze.erp_cust_az12;
@@ -115,9 +140,13 @@ TRUNCATE TABLE bronze.erp_cust_az12;
 FROM 'C:/path/to/your/csv/cust_az12.csv' 
 DELIMITER ',' CSV HEADER;
 
+==================================================
+
 -- Truncate and Import: erp_px_cat_g1v2
 
 TRUNCATE TABLE bronze.erp_px_cat_g1v2;
 \copy bronze.erp_px_cat_g1v2 
 FROM 'C:/path/to/your/csv/PX_CAT_G1V2.csv' 
 DELIMITER ',' CSV HEADER;
+
+
