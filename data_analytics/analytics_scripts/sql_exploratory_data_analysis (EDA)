@@ -1,58 +1,58 @@
 # SQL Exploratory Data Analysis (EDA) Project
 
 ## Overview
-This repository contains a comprehensive SQL-based Exploratory Data Analysis (EDA) project focused on analyzing a retail or e-commerce database. The SQL queries explore various dimensions of the dataset, including customers, products, sales, and orders, to uncover key business insights and metrics.
+This project contains a collection of SQL queries designed to perform exploratory data analysis (EDA) on a sales database. The queries aim to uncover key insights about customers, products, sales, and orders, providing a comprehensive understanding of the business's performance and trends.
 
-## Project Description
-The project leverages SQL queries to perform an in-depth analysis of a database structured with fact and dimension tables (`gold.fact_sales`, `gold.dim_customers`, `gold.dim_products`). The queries are designed to:
-- Inspect database schema and structure.
-- Analyze customer demographics, product categories, and sales trends.
-- Calculate key business metrics such as total sales, average prices, and customer distributions.
-- Generate reports for business insights, including revenue by category and customer spending patterns.
+## Features
+- **Database Schema Exploration**: Queries to retrieve all tables and columns from the database using `INFORMATION_SCHEMA`.
+- **Customer Analysis**:
+  - Identify unique countries of customers.
+  - Calculate the total number of customers and their distribution by country and gender.
+  - Determine the youngest and oldest customers based on birthdate.
+- **Product Analysis**:
+  - List all product categories, subcategories, and product names.
+  - Calculate the total number of products and their distribution by category.
+  - Compute average product costs per category.
+- **Sales Analysis**:
+  - Determine the date range of sales and the number of years covered.
+  - Calculate total sales, total quantity sold, average selling price, and total orders.
+  - Analyze revenue by product category and customer.
+  - Identify the distribution of sold items across countries.
+- **Rankings and Performance**:
+  - Rank the top 5 products by revenue using both simple and window function-based approaches.
+  - Identify the 5 worst-performing products by sales.
+  - List the top 10 customers by revenue and the 3 customers with the fewest orders.
 
-## Key Features
-- **Schema Exploration**: Queries to retrieve all tables and columns in the database using `INFORMATION_SCHEMA`.
-- **Customer Analysis**: Identifies customer demographics, including:
-  - Unique countries of customers.
-  - Youngest and oldest customers based on birthdates.
-  - Customer distribution by country and gender.
-- **Product Analysis**: Explores product hierarchies, including:
-  - Distinct categories, subcategories, and products.
-  - Total products by category and average costs per category.
-- **Sales Analysis**: Provides insights into sales performance, such as:
-  - Total sales, total items sold, and average selling price.
-  - Date range of orders and years of sales data.
-  - Total revenue by product category and customer.
-- **Order Insights**: Calculates the total number of orders and unique customers who placed orders.
-- **Comprehensive Report**: Combines key metrics (total sales, quantity, average price, orders, products, and customers) into a unified report.
-- **Geographic Insights**: Analyzes the distribution of sold items across countries.
-
-## Dataset
-The database is assumed to follow a star schema with the following tables:
-- **`gold.fact_sales`**: Contains sales data (e.g., `sales_amount`, `quantity`, `price`, `order_number`, `order_date`, `customer_key`, `product_key`).
-- **`gold.dim_customers`**: Contains customer data (e.g., `customer_key`, `first_name`, `last_name`, `country`, `gender`, `birthdate`).
-- **`gold.dim_products`**: Contains product data (e.g., `product_key`, `category`, `subcategory`, `product_name`, `cost`).
+## Database Schema
+The queries assume a database with the following key tables in the `gold` schema:
+- `dim_customers`: Contains customer information (e.g., customer_key, first_name, last_name, country, gender, birthdate).
+- `dim_products`: Contains product details (e.g., product_key, product_name, category, subcategory, cost).
+- `fact_sales`: Contains sales transactions (e.g., order_number, order_date, customer_key, product_key, sales_amount, quantity, price).
 
 ## Usage
-1. **Prerequisites**: Ensure access to a SQL database (e.g., PostgreSQL, MySQL, SQL Server) with the required schema and data loaded.
-2. **Running Queries**: Copy and execute the SQL queries in your preferred SQL client (e.g., pgAdmin, MySQL Workbench, or DBeaver).
-3. **Customization**: Modify table names, column names, or schema references (`gold.`) to match your database structure.
+- The queries are written in standard SQL and can be executed on any SQL database (e.g., PostgreSQL, MySQL, SQL Server) that supports the `INFORMATION_SCHEMA` and standard SQL functions like `EXTRACT`, `SUM`, `COUNT`, `AVG`, and window functions (`RANK`).
+- Ensure the database has the required tables (`gold.dim_customers`, `gold.dim_products`, `gold.fact_sales`) with the specified columns.
+- Copy and paste the queries into your SQL client or editor to execute them against your database.
 
-## Queries Included
-- Schema exploration (`INFORMATION_SCHEMA` queries).
-- Customer demographics (country, gender, age).
-- Product analysis (categories, subcategories, costs).
-- Sales metrics (total sales, quantity, average price, revenue by category/customer).
-- Order analysis (first/last order dates, total orders).
-- Geographic distribution of sold items.
+## Key Queries
+1. **Schema Exploration**: Retrieve all tables and columns in the database.
+2. **Customer Insights**: Analyze customer demographics (countries, gender, age).
+3. **Product Insights**: Explore product categories, subcategories, and costs.
+4. **Sales Metrics**: Calculate total sales, quantities, average prices, and order counts.
+5. **Revenue Analysis**: Break down revenue by category, customer, and country.
+6. **Performance Rankings**: Identify top and bottom-performing products and customers.
+
+## Notes
+- The queries are designed for a clean and normalized database. Ensure data integrity (e.g., no missing or null values in key columns) for accurate results.
+- Some queries use `LEFT JOIN` to handle potential missing relationships between tables.
+- The `EXTRACT` function is used for date calculations, which is specific to databases like PostgreSQL. Adjust for other databases (e.g., use `DATEDIFF` for SQL Server).
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. Feel free to use, modify, and distribute the queries as needed.
 
 
 =================================================================================================================
 =================================================================================================================
-
 
 
 
@@ -60,19 +60,27 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 SELECT * FROM INFORMATION_SCHEMA.TABLES;
 
+======================================================
+
 -- Explore All Columns in the Database
 
 SELECT * FROM INFORMATION_SCHEMA.COLUMNS;
+
+======================================================
 
 -- Dimensions Exploration
 -- Explore All Countries Our customers come from
 
 SELECT DISTINCT country FROM gold.dim_customers;
 
+======================================================
+
 -- Explore All Categories & subcategories & products
 
 SELECT DISTINCT category, subcategory, product_name FROM gold.dim_products
 ORDER BY 1,2,3;
+
+======================================================
 
 -- Date Exploration
 -- Find the date of the first and last order
@@ -84,6 +92,8 @@ SELECT
     EXTRACT(YEAR FROM AGE(MAX(order_date), MIN(order_date))) AS order_range_years
 FROM gold.fact_sales;
 
+======================================================
+
 -- Find the youngest and the oldest customer
 
 SELECT
@@ -93,6 +103,7 @@ SELECT
     EXTRACT(YEAR FROM AGE(CURRENT_DATE, MAX(birthdate))) AS youngest_age
 FROM gold.dim_customers;
 
+======================================================
 
 -- Find the Total sales
 
@@ -100,11 +111,15 @@ SELECT
 	SUM(sales_amount) AS total_sales
 FROM gold.fact_sales;
 
+======================================================
+
 -- Find how many items are sold
 
 SELECT 
 	SUM(quantity) AS total_quantity
 FROM  gold.fact_sales;
+
+======================================================
 
 -- Find the avarage selling price
 
@@ -112,12 +127,15 @@ SELECT
 	AVG(price) AS avg_price
 FROM  gold.fact_sales;
 
+======================================================
+
 -- Find the total number of orders
 
 SELECT 
 	COUNT(DISTINCT order_number) AS total_orders
 FROM  gold.fact_sales;
 
+======================================================
 
 -- Find the total numbers of products
 
@@ -129,6 +147,7 @@ SELECT
 	COUNT(DISTINCT product_name) AS total_products
 FROM gold.dim_products;
 
+======================================================
 
 -- Find the total number of customers
 
@@ -136,12 +155,15 @@ SELECT
 	COUNT(customer_key) AS total_customers
 FROM gold.dim_customers;
 
+======================================================
+
 -- Find the total number of customers that has placed an order
 
 SELECT 
 	COUNT(DISTINCT customer_key) AS total_customers
 FROM gold.fact_sales;
 
+======================================================
 
 -- Generate a Report that shows all key metrics of the business
 
@@ -157,6 +179,7 @@ SELECT 'Total Products', COUNT(DISTINCT product_name) FROM gold.dim_products
 UNION ALL
 SELECT 'Total Customers', COUNT(customer_key) FROM gold.dim_customers;
 
+======================================================
 
 -- Find total customers by countries
 
@@ -167,6 +190,8 @@ FROM gold.dim_customers
 GROUP BY country
 ORDER BY total_customers DESC;
 
+======================================================
+
 -- Find total customers by gender
 
 SELECT
@@ -175,6 +200,8 @@ SELECT
 FROM gold.dim_customers
 GROUP BY gender
 ORDER BY total_customers DESC;
+
+======================================================
 
 -- Find total products by category
 
@@ -185,6 +212,8 @@ FROM gold.dim_products
 GROUP BY category
 ORDER BY total_products DESC;
 
+======================================================
+
 -- Average costs in each category
 
 SELECT
@@ -193,6 +222,8 @@ SELECT
 FROM gold.dim_products
 GROUP BY category
 ORDER BY avg_cost DESC;
+
+======================================================
 
 -- Total revenue generated for each category
 
@@ -205,6 +236,7 @@ LEFT JOIN gold.dim_products p
 GROUP BY p.category
 ORDER BY total_revenue DESC;
 
+======================================================
 
 -- Total revenue generated by each customer
 
@@ -222,6 +254,8 @@ GROUP BY
     c.last_name
 ORDER BY total_revenue DESC;
 
+======================================================
+
 -- The distribution of sold items across countries
 
 SELECT
@@ -232,3 +266,94 @@ LEFT JOIN gold.dim_customers c
     ON c.customer_key = f.customer_key
 GROUP BY c.country
 ORDER BY total_sold_items DESC;
+
+======================================================
+
+-- Which 5 products Generating the Highest Revenue?
+-- Simple Ranking
+
+SELECT
+    p.product_name,
+    SUM(f.sales_amount) AS total_revenue
+FROM gold.fact_sales f
+LEFT JOIN gold.dim_products p
+    ON p.product_key = f.product_key
+GROUP BY p.product_name
+ORDER BY total_revenue DESC
+Limit 5;
+
+======================================================
+
+-- Complex but Flexibly Ranking Using Window Functions
+
+SELECT *
+FROM (
+    SELECT
+        p.product_name,
+        SUM(f.sales_amount) AS total_revenue,
+        RANK() OVER (ORDER BY SUM(f.sales_amount) DESC) AS rank_products
+    FROM gold.fact_sales f
+    LEFT JOIN gold.dim_products p
+        ON p.product_key = f.product_key
+    GROUP BY p.product_name
+) AS ranked_products
+WHERE rank_products <= 5;
+
+======================================================
+
+-- What are the 5 worst-performing products in terms of sales?
+
+SELECT
+    p.product_name,
+    SUM(f.sales_amount) AS total_revenue
+FROM gold.fact_sales f
+LEFT JOIN gold.dim_products p
+    ON p.product_key = f.product_key
+GROUP BY p.product_name
+ORDER BY total_revenue
+LIMIT 5;
+
+======================================================
+
+-- Find the top 10 customers who have generated the highest revenue
+
+SELECT
+    c.customer_key,
+    c.first_name,
+    c.last_name,
+    SUM(f.sales_amount) AS total_revenue
+FROM gold.fact_sales f
+LEFT JOIN gold.dim_customers c
+    ON c.customer_key = f.customer_key
+GROUP BY 
+    c.customer_key,
+    c.first_name,
+    c.last_name
+ORDER BY total_revenue DESC
+LIMIT 10;
+
+======================================================
+
+-- The 3 customers with the fewest orders placed
+
+SELECT
+    c.customer_key,
+    c.first_name,
+    c.last_name,
+    COUNT(DISTINCT order_number) AS total_orders
+FROM gold.fact_sales f
+LEFT JOIN gold.dim_customers c
+    ON c.customer_key = f.customer_key
+GROUP BY 
+    c.customer_key,
+    c.first_name,
+    c.last_name
+ORDER BY total_orders
+LIMIT 3;
+
+
+
+
+
+
+
