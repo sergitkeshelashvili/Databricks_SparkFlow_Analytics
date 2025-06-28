@@ -72,8 +72,7 @@ Sales Trends
 
 These insights deliver key business metrics to support strategic decision-making.
 
-
-
+============================================================
 
 🛡️ License
 
