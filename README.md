@@ -29,9 +29,6 @@ Data Modeling: Creating fact and dimension tables for efficient analytical queri
 Analytics & Reporting: Building SQL-based reports and dashboards to deliver actionable insights.
 
 
-============================================================
-
-
 🎯 This repository is ideal for professionals and students aiming to demonstrate expertise in:
 
 SQL Development
