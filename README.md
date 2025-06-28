@@ -7,6 +7,7 @@ This portfolio project showcases a modern data warehousing and analytics solutio
 
 ============================================================
 
+
 🏗️ Data Architecture
 The project adopts the Medallion Architecture, organizing data into three layers:
 
@@ -14,7 +15,9 @@ Bronze Layer: Stores raw, unprocessed data ingested from source systems (CSV fil
 Silver Layer: Cleanses, standardizes, and normalizes data to prepare it for analysis.
 Gold Layer: Provides business-ready data modeled into a star schema optimized for reporting and analytics.
 
+
 ============================================================
+
 
 📖 Project Overview
 
@@ -25,7 +28,9 @@ ETL Pipelines: Extracting, transforming, and loading data from source systems in
 Data Modeling: Creating fact and dimension tables for efficient analytical queries.
 Analytics & Reporting: Building SQL-based reports and dashboards to deliver actionable insights.
 
+
 ============================================================
+
 
 🎯 This repository is ideal for professionals and students aiming to demonstrate expertise in:
 
@@ -36,6 +41,8 @@ ETL Pipeline Development
 Data Modeling
 Data Analytics
 
+
+============================================================
 
 
 🚀 Project Requirements
@@ -53,6 +60,8 @@ Integration: Merge data from both sources into a unified, analytics-ready data m
 Scope: Focus on the latest dataset; historical data storage is not required.
 Documentation: Provide clear documentation of the data model for business and analytics teams.
 
+
+============================================================
 
 
 📈​ Data Analysis: BI, Analytics & Reporting
