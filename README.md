@@ -10,6 +10,7 @@ The project adopts the Medallion Architecture, organizing data into three layers
 Bronze Layer: Stores raw, unprocessed data ingested from source systems (CSV files) into a PostgreSQL Server database.
 Silver Layer: Cleanses, standardizes, and normalizes data to prepare it for analysis.
 Gold Layer: Provides business-ready data modeled into a star schema optimized for reporting and analytics.
+
 ============================================================
 
 📖 Project Overview
@@ -19,6 +20,7 @@ Data Architecture: Designing a modern data warehouse using the Medallion Archite
 ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
 Data Modeling: Creating fact and dimension tables for efficient analytical queries.
 Analytics & Reporting: Building SQL-based reports and dashboards to deliver actionable insights.
+
 🎯 This repository is ideal for professionals and students aiming to demonstrate expertise in:
 
 SQL Development
@@ -27,6 +29,7 @@ Data Engineering
 ETL Pipeline Development
 Data Modeling
 Data Analytics
+
 ============================================================
 
 🚀 Project Requirements
@@ -42,6 +45,7 @@ Data Quality: Address and resolve data quality issues before analysis.
 Integration: Merge data from both sources into a unified, analytics-ready data model.
 Scope: Focus on the latest dataset; historical data storage is not required.
 Documentation: Provide clear documentation of the data model for business and analytics teams.
+
 ============================================================
 
 📈 Data Analysis: BI, Analytics & Reporting
