@@ -5,9 +5,11 @@ This portfolio project showcases a modern data warehousing and analytics solutio
 
 
 
+==================================================================================================================================================
 
 🏗️ Data Architecture
 
+==================================================================================================================================================
 The project adopts the Medallion Architecture, organizing data into three layers:
 
 Bronze Layer: Stores raw, unprocessed data ingested from source systems (CSV files) into a PostgreSQL Server database.
