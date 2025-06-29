@@ -5,11 +5,8 @@ Welcome to the Data Warehouse and Analytics Project! 🚀 This portfolio project
 ============================================================
 
 🖥 Data Architecture 
-The project adopts the Medallion Architecture, organizing data into three layers:
 
-🥉 Bronze Layer: Stores raw, unprocessed data ingested from source systems (CSV files) into a PostgreSQL Server database.
-🥈 Silver Layer: Cleanses, standardizes, and normalizes data to prepare it for analysis.
-🥇 Gold Layer: Provides business-ready data modeled into a star schema optimized for reporting and analytics.
+The project adopts the Medallion Architecture, organizing data into three layers:🥉 Bronze Layer: Stores raw, unprocessed data ingested from source systems (CSV files) into a PostgreSQL Server database. 🥈 Silver Layer: Cleanses, standardizes, and normalizes data to prepare it for analysis. 🥇 Gold Layer: Provides business-ready data modeled into a star schema optimized for reporting and analytics.
 
 ============================================================
 
