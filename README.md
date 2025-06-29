@@ -20,7 +20,12 @@ Data Architecture: Designing a modern data warehouse using the Medallion Archite
 ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
 Data Modeling: Creating fact and dimension tables for efficient analytical queries.
 Analytics & Reporting: Building SQL-based reports and dashboards to deliver actionable insights.
+Repository Structure
 
+The repository is organized into two main folders:
+
+data_analytics: Contains resources for data analysis, including SQL scripts for exploratory data analysis (EDA) and advanced analytics to generate actionable business insights.
+data_warehouse: Contains data warehousing materials, including datasets, documentation, scripts, and tests for building and maintaining the data warehouse.
 🎯 This repository is ideal for professionals and students aiming to demonstrate expertise in:
 
 SQL Development
@@ -29,23 +34,29 @@ Data Engineering
 ETL Pipeline Development
 Data Modeling
 Data Analytics
-
 ============================================================
 
 🚀 Project Requirements
 Data Engineering: Building the Data Warehouse
-
-Objective:
+Objective
 
 Create a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
 
-Specifications:
+Specifications
 
 Data Sources: Import data from ERP and CRM systems provided as CSV files.
 Data Quality: Address and resolve data quality issues before analysis.
 Integration: Merge data from both sources into a unified, analytics-ready data model.
 Scope: Focus on the latest dataset; historical data storage is not required.
 Documentation: Provide clear documentation of the data model for business and analytics teams.
+Data Warehouse Resources
+
+The data_warehouse folder contains:
+
+Datasets: Source data files (e.g., CSV files from ERP and CRM systems).
+Documentation: Detailed data model documentation for business and analytics teams.
+Scripts: SQL scripts for ETL pipelines and data transformations.
+Tests: Test scripts to validate data quality and pipeline integrity.
 
 ============================================================
 
