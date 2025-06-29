@@ -59,7 +59,7 @@ Customer Behavior // Product Performance // Sales Trends
 🏅 gold.dim_products.csv: Dimension table containing cleaned product data.
 🏅 gold.fact_sales.csv: Fact table containing cleaned and aggregated sales data.
 
-📑 Data_Analytics_Roadmap (EDA & Advance Analytics)
+📑 docs // Data_Analytics_Roadmap (EDA & Advance Analytics)
 
 🗂 The data_analytics folder contains:
 
