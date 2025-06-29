@@ -55,7 +55,7 @@ Specifications
 
 📚 Data Warehouse Resources
 
-📁 The data_warehouse folder contains:
+🗂 The data_warehouse folder contains:
 
 📂 Datasets: Source data files (e.g., CSV files from ERP and CRM systems).
 📂 Documentation: Detailed data model documentation for business and analytics teams.
