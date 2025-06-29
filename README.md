@@ -27,16 +27,9 @@ SQL Development // Data Architecture // Data Engineering // ETL Pipeline Develop
 
 ============================================================
 
-🛩 Project Requirements //
-Data Engineering: Building the Data Warehouse // Objective: Create a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+🛩 Data Engineering: Building the Data Warehouse // Objective: Create a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
 
-Specifications //
-
-🛸 Data Sources: Import data from ERP and CRM systems provided as CSV files.
-🛸 Data Quality: Address and resolve data quality issues before analysis.
-🛸 Integration: Merge data from both sources into a unified, analytics-ready data model.
-🛸 Scope: Focus on the latest dataset; historical data storage is not required.
-🛸 Documentation: Provide clear documentation of the data model for business and analytics teams.
+Specifications // 🛸 Data Sources: Import data from ERP and CRM systems provided as CSV files. 🛸 Data Quality: Address and resolve data quality issues before analysis. 🛸 Integration: Merge data from both sources into a unified, analytics-ready data model. 🛸 Scope: Focus on the latest dataset; historical data storage is not required. 🛸 Documentation: Provide clear documentation of the data model for business and analytics teams.
 
 📚 Data Warehouse Resources
 
