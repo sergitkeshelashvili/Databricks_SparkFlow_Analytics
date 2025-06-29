@@ -4,8 +4,7 @@ Welcome to the Data Warehouse and Analytics Project! 🚀 This portfolio project
 
 ============================================================
 
-
-🖥 Data Architecture
+🖥 Data Architecture 
 The project adopts the Medallion Architecture, organizing data into three layers:
 
 🥉 Bronze Layer: Stores raw, unprocessed data ingested from source systems (CSV files) into a PostgreSQL Server database.
@@ -13,7 +12,6 @@ The project adopts the Medallion Architecture, organizing data into three layers
 🥇 Gold Layer: Provides business-ready data modeled into a star schema optimized for reporting and analytics.
 
 ============================================================
-
 
 📖 Project Overview
 This project focuses on:
@@ -37,7 +35,6 @@ Repository Structure
 SQL Development // Data Architecture // Data Engineering // ETL Pipeline Development // Data Modeling // Data Analytics
 
 ============================================================
-
 
 🛩 Project Requirements
 Data Engineering: Building the Data Warehouse
@@ -64,7 +61,6 @@ Specifications
 
 ============================================================
 
-
 📊 Data Analysis: BI, Analytics & Reporting
 Objective
 
@@ -90,13 +86,9 @@ Customer Behavior // Product Performance // Sales Trends
 
 📂 Advanced Analytics Scripts: Scripts for in-depth analysis, generating actionable insights for business stakeholders.
 
-
-
-
 📈 These files represent the business-ready outputs of the data warehouse, optimized for reporting and analytics.
 
 ============================================================
-
 
 🛡️ License
 This project is licensed under the MIT License.
