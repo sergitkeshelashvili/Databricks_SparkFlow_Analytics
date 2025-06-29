@@ -24,8 +24,9 @@ Repository Structure
 
 🗃 The repository is organized into two main folders:
 
-data_warehouse: Contains data warehousing materials, including datasets, documentation, scripts, and tests for building and maintaining the data warehouse.
-data_analytics: Contains resources for data analysis, including SQL scripts for exploratory data analysis (EDA) and advanced analytics to generate actionable business insights.
+📂 data_warehouse: Contains data warehousing materials, including datasets, documentation, scripts, and tests for building and maintaining the data warehouse.
+
+📂 data_analytics: Contains resources for data analysis, including SQL scripts for exploratory data analysis (EDA) and advanced analytics to generate actionable business insights.
 
 
 🎯 This repository is ideal for professionals and students aiming to demonstrate expertise in:
@@ -73,14 +74,15 @@ Customer Behavior
 Product Performance
 Sales Trends
 
-These insights deliver key business metrics to support strategic decision-making.
+🔎 These insights deliver key business metrics to support strategic decision-making.
 
 📚 Analytics Resources
 
-📁 The data_analytics folder contains:
+🗂 The data_analytics folder contains:
 
-SQL Exploratory Data Analysis (EDA): Scripts for initial data exploration to understand patterns and trends.
-Advanced Analytics Scripts: Scripts for in-depth analysis, generating actionable insights for business stakeholders.
+📂 SQL Exploratory Data Analysis (EDA): Scripts for initial data exploration to understand patterns and trends.
+
+📂 Advanced Analytics Scripts: Scripts for in-depth analysis, generating actionable insights for business stakeholders.
 
 Gold Layer Outputs / The final transformed and cleaned data products, including:
 
