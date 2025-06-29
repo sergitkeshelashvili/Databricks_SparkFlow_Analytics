@@ -3,15 +3,19 @@
 Welcome to the Data Warehouse and Analytics Project! 🚀 This portfolio project showcases a modern data warehousing and analytics solution, demonstrating best practices in data engineering and analytics. It covers the entire process, from building a data warehouse to generating actionable business insights.
 
 ============================================================
+============================================================
+
 
 🖥 Data Architecture
 The project adopts the Medallion Architecture, organizing data into three layers:
 
-Bronze Layer: Stores raw, unprocessed data ingested from source systems (CSV files) into a PostgreSQL Server database.
-Silver Layer: Cleanses, standardizes, and normalizes data to prepare it for analysis.
-Gold Layer: Provides business-ready data modeled into a star schema optimized for reporting and analytics.
+🥉 Bronze Layer: Stores raw, unprocessed data ingested from source systems (CSV files) into a PostgreSQL Server database.
+🥈 Silver Layer: Cleanses, standardizes, and normalizes data to prepare it for analysis.
+🥇 Gold Layer: Provides business-ready data modeled into a star schema optimized for reporting and analytics.
 
 ============================================================
+============================================================
+
 
 📖 Project Overview
 This project focuses on:
@@ -35,6 +39,8 @@ Repository Structure
 SQL Development // Data Architecture // Data Engineering // ETL Pipeline Development // Data Modeling // Data Analytics
 
 ============================================================
+============================================================
+
 
 🛩 Project Requirements
 Data Engineering: Building the Data Warehouse
@@ -60,6 +66,8 @@ Documentation: Provide clear documentation of the data model for business and an
 📂 Tests: Test scripts to validate data quality and pipeline integrity.
 
 ============================================================
+============================================================
+
 
 📊 Data Analysis: BI, Analytics & Reporting
 Objective
@@ -89,9 +97,11 @@ gold.fact_sales.csv: Fact table containing cleaned and aggregated sales data.
 
 
 
-These files represent the business-ready outputs of the data warehouse, optimized for reporting and analytics.
+📈 These files represent the business-ready outputs of the data warehouse, optimized for reporting and analytics.
 
 ============================================================
+============================================================
+
 
 🛡️ License
 This project is licensed under the MIT License.
