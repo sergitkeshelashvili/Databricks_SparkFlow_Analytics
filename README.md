@@ -18,10 +18,10 @@ The project adopts the Medallion Architecture, organizing data into three layers
 📖 Project Overview
 This project focuses on:
 
-Data Architecture: Designing a modern data warehouse using the Medallion Architecture (Bronze, Silver, Gold layers).
-ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
-Data Modeling: Creating fact and dimension tables for efficient analytical queries.
-Analytics & Reporting: Building SQL-based reports and dashboards to deliver actionable insights.
+🏵 Data Architecture: Designing a modern data warehouse using the Medallion Architecture (Bronze, Silver, Gold layers).
+🏵 ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
+🏵 Data Modeling: Creating fact and dimension tables for efficient analytical queries.
+🏵 Analytics & Reporting: Building SQL-based reports and dashboards to deliver actionable insights.
 
 Repository Structure
 
@@ -47,11 +47,11 @@ Create a modern data warehouse using SQL Server to consolidate sales data, enabl
 
 Specifications
 
-Data Sources: Import data from ERP and CRM systems provided as CSV files.
-Data Quality: Address and resolve data quality issues before analysis.
-Integration: Merge data from both sources into a unified, analytics-ready data model.
-Scope: Focus on the latest dataset; historical data storage is not required.
-Documentation: Provide clear documentation of the data model for business and analytics teams.
+🛸 Data Sources: Import data from ERP and CRM systems provided as CSV files.
+🛸 Data Quality: Address and resolve data quality issues before analysis.
+🛸 Integration: Merge data from both sources into a unified, analytics-ready data model.
+🛸 Scope: Focus on the latest dataset; historical data storage is not required.
+🛸 Documentation: Provide clear documentation of the data model for business and analytics teams.
 
 📚 Data Warehouse Resources
 
