@@ -1,7 +1,32 @@
+# Gold Layer Views: `gold.dim_customers`, `gold.dim_products`, `gold.fact_sales`
+
+## Overview
+This SQL script creates three PostgreSQL views in the `gold` schema: `gold.dim_customers`, `gold.dim_products`, and `gold.fact_sales`. These views transform and integrate data from the `silver` schema tables to create a structured, analytics-ready data model for customer, product, and sales data. The views are designed to support reporting and analysis in a data warehouse environment.
+
+## Purpose
+The views serve the following purposes:
+- **`gold.dim_customers`**: Provides a clean, consolidated view of customer data, including unique keys, demographic details, and derived attributes.
+- **`gold.dim_products`**: Delivers a curated view of active product data with category details and costs.
+- **`gold.fact_sales`**: Aggregates sales transaction data with links to customer and product dimensions for analytical queries.
+
+These views are part of a gold layer in a data warehouse, optimized for business intelligence and reporting.
+
+## Schema
+The views are created in the `gold` schema and rely on tables from the `silver` schema:
+- **Customer-related tables**:
+  - `silver.crm_cust_info`: Contains customer information (`cst_id`, `cst_key`, `cst_firstname`, `cst_lastname`, `cst_gndr`, `cst_marital_status`, `cst_create_date`).
+  - `silver.erp_cust_az12`: Provides additional customer attributes (`cid`, `gen`, `bdate`).
+  - `silver.erp_loc_a101`: Contains location data (`cid`, `cntry`).
+- **Product-related tables**:
+  - `silver.crm_prd_info`: Contains product details (`prd_id`, `prd_key`, `prd_nm`, `cat_id`, `prd_cost`, `prd_line`, `prd_start_dt`, `prd_end_dt`).
+  - `silver.erp_px_cat_g1v2`: Provides product category details (`id`, `cat`, `subcat`, `maintenance`).
+- **Sales-related table**:
+  - `silver.crm_sales_details`: Contains sales transaction data (`sls_ord_num`, `sls_prd_key`, `sls_cust_id`, `sls_order_dt`, `sls_ship_dt`, `sls_due_dt`, `sls_sales`, `sls_quantity`, `sls_price`).
 
 
 
-==================================================
+
+=======================================================================================
 
 CREATE VIEW gold.dim_customers AS
 SELECT
@@ -21,8 +46,8 @@ FROM silver.crm_cust_info ci
 LEFT JOIN silver.erp_cust_az12 ca ON ci.cst_key = ca.cid
 LEFT JOIN silver.erp_loc_a101 la ON  ci.cst_key = la.cid
 
+=======================================================================================
 
-==================================================
 
 CREATE VIEW gold.dim_products AS
 SELECT
@@ -42,7 +67,8 @@ LEFT JOIN silver.erp_px_cat_g1v2 pc ON pn.cat_id = pc.id
 WHERE prd_end_dt IS NULL -- filter out all historical data
 
 
-==================================================
+=======================================================================================
+
 
 CREATE VIEW gold.fact_sales AS
 SELECT
