@@ -4,7 +4,7 @@ Welcome to the Data Warehouse and Analytics Project! 🚀 This portfolio project
 
 ============================================================
 
-🏗️ Data Architecture
+🖥 Data Architecture
 The project adopts the Medallion Architecture, organizing data into three layers:
 
 Bronze Layer: Stores raw, unprocessed data ingested from source systems (CSV files) into a PostgreSQL Server database.
@@ -22,7 +22,7 @@ Data Modeling: Creating fact and dimension tables for efficient analytical queri
 Analytics & Reporting: Building SQL-based reports and dashboards to deliver actionable insights.
 Repository Structure
 
-The repository is organized into two main folders:
+🗃 The repository is organized into two main folders:
 
 data_warehouse: Contains data warehousing materials, including datasets, documentation, scripts, and tests for building and maintaining the data warehouse.
 data_analytics: Contains resources for data analysis, including SQL scripts for exploratory data analysis (EDA) and advanced analytics to generate actionable business insights.
@@ -55,7 +55,7 @@ Documentation: Provide clear documentation of the data model for business and an
 
 📚 Data Warehouse Resources
 
-🗂 The data_warehouse folder contains:
+📁 The data_warehouse folder contains:
 
 Datasets: Source data files (e.g., CSV files from ERP and CRM systems).
 Documentation: Detailed data model documentation for business and analytics teams.
@@ -77,7 +77,7 @@ These insights deliver key business metrics to support strategic decision-making
 
 📚 Analytics Resources
 
-🗂 The data_analytics folder contains:
+📁 The data_analytics folder contains:
 
 SQL Exploratory Data Analysis (EDA): Scripts for initial data exploration to understand patterns and trends.
 Advanced Analytics Scripts: Scripts for in-depth analysis, generating actionable insights for business stakeholders.
