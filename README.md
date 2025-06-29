@@ -78,9 +78,9 @@ Customer Behavior // Product Performance // Sales Trends
 
 📋 datasets // Gold Layer Outputs // The final transformed and cleaned data products, including:
 
-gold.dim_customers.csv: Dimension table containing cleaned customer data.
-gold.dim_products.csv: Dimension table containing cleaned product data.
-gold.fact_sales.csv: Fact table containing cleaned and aggregated sales data.
+🏅 gold.dim_customers.csv: Dimension table containing cleaned customer data.
+🏅 gold.dim_products.csv: Dimension table containing cleaned product data.
+🏅 gold.fact_sales.csv: Fact table containing cleaned and aggregated sales data.
 
 📑 Data_Analytics_Roadmap (EDA & Advance Analytics)
 
