@@ -22,7 +22,7 @@ Data Modeling: Creating fact and dimension tables for efficient analytical queri
 Analytics & Reporting: Building SQL-based reports and dashboards to deliver actionable insights.
 Repository Structure
 
-🗃 The repository is organized into two main folders:
+🗂 The repository is organized into two main folders:
 
 📂 data_warehouse: Contains data warehousing materials, including datasets, documentation, scripts, and tests for building and maintaining the data warehouse.
 
@@ -40,7 +40,7 @@ Data Analytics
 
 ============================================================
 
-🚀 Project Requirements
+🛩 Project Requirements
 Data Engineering: Building the Data Warehouse
 Objective
 
@@ -58,10 +58,10 @@ Documentation: Provide clear documentation of the data model for business and an
 
 📁 The data_warehouse folder contains:
 
-Datasets: Source data files (e.g., CSV files from ERP and CRM systems).
-Documentation: Detailed data model documentation for business and analytics teams.
-Scripts: SQL scripts for ETL pipelines and data transformations.
-Tests: Test scripts to validate data quality and pipeline integrity.
+📂 Datasets: Source data files (e.g., CSV files from ERP and CRM systems).
+📂 Documentation: Detailed data model documentation for business and analytics teams.
+📂 Scripts: SQL scripts for ETL pipelines and data transformations.
+📂 Tests: Test scripts to validate data quality and pipeline integrity.
 
 ============================================================
 
@@ -78,17 +78,22 @@ Sales Trends
 
 📚 Analytics Resources
 
+📋 datasets / Gold Layer Outputs / The final transformed and cleaned data products, including:
+
+gold.dim_customers.csv: Dimension table containing cleaned customer data.
+gold.dim_products.csv: Dimension table containing cleaned product data.
+gold.fact_sales.csv: Fact table containing cleaned and aggregated sales data.
+
+📑 Data_Analytics_Roadmap (EDA & Advance Analytics)
+
 🗂 The data_analytics folder contains:
 
 📂 SQL Exploratory Data Analysis (EDA): Scripts for initial data exploration to understand patterns and trends.
 
 📂 Advanced Analytics Scripts: Scripts for in-depth analysis, generating actionable insights for business stakeholders.
 
-Gold Layer Outputs / The final transformed and cleaned data products, including:
 
-gold.dim_customers.csv: Dimension table containing cleaned customer data.
-gold.dim_products.csv: Dimension table containing cleaned product data.
-gold.fact_sales.csv: Fact table containing cleaned and aggregated sales data.
+
 
 These files represent the business-ready outputs of the data warehouse, optimized for reporting and analytics.
 
