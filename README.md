@@ -11,12 +11,7 @@ The project adopts the Medallion Architecture, organizing data into three layers
 ============================================================
 
 📖 Project Overview
-This project focuses on:
-
-🪙 Data Architecture: Designing a modern data warehouse using the Medallion Architecture (Bronze, Silver, Gold layers).
-🪙 ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
-🪙 Data Modeling: Creating fact and dimension tables for efficient analytical queries.
-🪙 Analytics & Reporting: Building SQL-based reports and dashboards to deliver actionable insights.
+This project focuses on: 🪙 Data Architecture: Designing a modern data warehouse using the Medallion Architecture (Bronze, Silver, Gold layers). 🪙 ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse. 🪙 Data Modeling: Creating fact and dimension tables for efficient analytical queries. 🪙 Analytics & Reporting: Building SQL-based reports and dashboards to deliver actionable insights.
 
 Repository Structure
 
