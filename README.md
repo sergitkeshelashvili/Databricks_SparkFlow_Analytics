@@ -20,6 +20,7 @@ Data Architecture: Designing a modern data warehouse using the Medallion Archite
 ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
 Data Modeling: Creating fact and dimension tables for efficient analytical queries.
 Analytics & Reporting: Building SQL-based reports and dashboards to deliver actionable insights.
+
 Repository Structure
 
 🗂 The repository is organized into two main folders:
@@ -31,12 +32,7 @@ Repository Structure
 
 🎯 This repository is ideal for professionals and students aiming to demonstrate expertise in:
 
-SQL Development
-Data Architecture
-Data Engineering
-ETL Pipeline Development
-Data Modeling
-Data Analytics
+SQL Development // Data Architecture // Data Engineering // ETL Pipeline Development // Data Modeling // Data Analytics
 
 ============================================================
 
@@ -70,15 +66,13 @@ Objective
 
 Develop SQL-based analytics to provide insights into:
 
-Customer Behavior
-Product Performance
-Sales Trends
+Customer Behavior // Product Performance // Sales Trends
 
 🔎 These insights deliver key business metrics to support strategic decision-making.
 
 📚 Analytics Resources
 
-📋 datasets / Gold Layer Outputs / The final transformed and cleaned data products, including:
+📋 datasets // Gold Layer Outputs // The final transformed and cleaned data products, including:
 
 gold.dim_customers.csv: Dimension table containing cleaned customer data.
 gold.dim_products.csv: Dimension table containing cleaned product data.
