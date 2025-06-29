@@ -53,9 +53,9 @@ Integration: Merge data from both sources into a unified, analytics-ready data m
 Scope: Focus on the latest dataset; historical data storage is not required.
 Documentation: Provide clear documentation of the data model for business and analytics teams.
 
-Data Warehouse Resources
+📚 Data Warehouse Resources
 
-The data_warehouse folder contains:
+🗂 The data_warehouse folder contains:
 
 Datasets: Source data files (e.g., CSV files from ERP and CRM systems).
 Documentation: Detailed data model documentation for business and analytics teams.
@@ -64,7 +64,7 @@ Tests: Test scripts to validate data quality and pipeline integrity.
 
 ============================================================
 
-📈 Data Analysis: BI, Analytics & Reporting
+📊 Data Analysis: BI, Analytics & Reporting
 Objective
 
 Develop SQL-based analytics to provide insights into:
@@ -75,9 +75,9 @@ Sales Trends
 
 These insights deliver key business metrics to support strategic decision-making.
 
-Analytics Resources
+📚 Analytics Resources
 
-The data_analytics folder contains:
+🗂 The data_analytics folder contains:
 
 SQL Exploratory Data Analysis (EDA): Scripts for initial data exploration to understand patterns and trends.
 Advanced Analytics Scripts: Scripts for in-depth analysis, generating actionable insights for business stakeholders.
