@@ -1,5 +1,5 @@
 # SQL Exploratory Data Analysis (EDA) Project
-	
+
 ## Overview
 This project contains a collection of SQL queries designed to perform exploratory data analysis (EDA) on a sales database. The queries aim to uncover key insights about customers, products, sales, and orders, providing a comprehensive understanding of the business's performance and trends.
 
