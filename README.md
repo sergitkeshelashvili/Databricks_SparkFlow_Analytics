@@ -1,6 +1,6 @@
 ### Databricks SparkFlow Analytics 📊💸
 
-Welcome to the Databricks SparkFlow Analytics Project! 🚀 This portfolio project showcases a modern data warehousing and data analytics solution built on Databricks using PySpark, Spark SQL, and Delta Lake. It demonstrates best practices in data engineering, ETL pipeline development, data modeling, and business intelligence (BI), covering the entire process from building a scalable data warehouse to generating actionable business insights through exploratory and advanced data analytics.
+Welcome to the Databricks SparkFlow Analytics Project! 🚀 This portfolio project showcases a modern 🏪 data warehousing and 📊 data analytics solution built on 🔧 Databricks using 🐍 PySpark, 💻Spark SQL, and 💾 Delta Lake. It demonstrates best practices in ⚙️ data engineering, 🔄 ETL pipeline development, 🏗️ data modeling, and 📊 business intelligence (BI), covering the entire process from building a scalable data warehouse to generating actionable business insights through exploratory and advanced 📈 data analytics.
 
 ============================================================
 
@@ -87,11 +87,4 @@ The data_warehouse folder contains:
 
 🛡️ License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as needed, provided you adhere to the license terms.
-
-============================================================
-
-🔑 Keywords
-
-🔧 Databricks, 🐍 PySpark, 📜 Spark SQL, 💾 Delta Lake, 🏗️ Medallion Architecture, 🏪 Data Warehouse, ⚙️ Data Engineering, 🔄 ETL Pipelines, 📊 Data Modeling, ⭐ Star Schema, 📈 Data Analytics, 📊 Business Intelligence, 🌐 Big Data, 🏞️ Data Lakehouse, ✅ Data Quality, ⚡ Data Processing, 🧹 Data Cleansing, 📏 Data Standardization, 💻 SQL Development, 👥 Customer Behavior, 📦 Product Performance, 📅 Sales Trends, 🎯 Data-Driven Decision-Making, 🔍 Analytical Queries, 🗃️ Version Control, 🌍 GitHub
-
 
