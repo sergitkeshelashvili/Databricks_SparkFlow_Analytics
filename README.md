@@ -8,6 +8,7 @@
 A **modern data warehousing & analytics solution** built on **Databricks**, powered by **PySpark, Spark SQL, and Delta Lake**.  
 
 This project demonstrates end-to-end **data engineering and BI practices**:  
+
 ✅ Scalable **data warehouse** design  
 ✅ Automated **ETL pipelines**  
 ✅ **Star schema modeling** for analytics  
@@ -51,8 +52,6 @@ The project adopts the **Medallion Architecture** with three layers:
 📂 data_analytics/
 ┣ 📂 sql/ → EDA & analytics SQL scripts
 ┗ 📂 reports/ → Insights & BI reporting queries
-
-
 
 ---
 
