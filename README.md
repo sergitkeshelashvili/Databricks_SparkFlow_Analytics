@@ -29,7 +29,7 @@ The project adopts the **Medallion Architecture** with three layers:
 
 ## 🖼 ** Medallion Architecture Diagram**
 
-![Medallion Architecture](./https://github.com/sergitkeshelashvili/Databricks_SparkFlow_Analytics/blob/main/data_warehouse/docs/Databricks_SparkFlow_Analytics_project.jpg)
+![Medallion Architecture](./data_warehouse/docs/Databricks_SparkFlow_Analytics_project.jpg)
 
 
 ---
