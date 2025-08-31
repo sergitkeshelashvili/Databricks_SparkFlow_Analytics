@@ -47,8 +47,7 @@ Welcome to the Databricks SparkFlow Analytics Project! 🚀 This portfolio proje
 
 ============================================================
 
-📚 Data Warehouse Resources
-The data_warehouse folder contains:
+📚 Data Warehouse Resources // The data_warehouse folder contains:
 
 📂 Datasets: Source data files (e.g., CSV files from ERP and CRM systems).
 📂 Documentation: Detailed data model documentation for business and analytics teams.
