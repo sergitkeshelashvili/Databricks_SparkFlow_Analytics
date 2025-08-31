@@ -27,7 +27,7 @@ The project adopts the **Medallion Architecture** with three layers:
 | 🥇 **Gold**   | Business-ready, star schema data for BI & reporting. |
 
 
-## 🖼 ** Medallion Architecture Diagram**
+## 🏗️ Medallion Architecture Diagram
 
 ![Medallion Architecture](./data_warehouse/docs/Databricks_SparkFlow_Analytics_project.jpg)
 
