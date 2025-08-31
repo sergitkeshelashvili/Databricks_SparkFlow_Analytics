@@ -4,8 +4,7 @@ Welcome to the Databricks SparkFlow Analytics Project! 🚀 This portfolio proje
 
 ============================================================
 
-🖥 Data Architecture
-The project adopts the Medallion Architecture, organizing data into three layers:
+🖥 Data Architecture // The project adopts the Medallion Architecture, organizing data into three layers:
 
 🥉 Bronze Layer: Stores raw, unprocessed data ingested from source systems (CSV files) into Delta Lake tables on Databricks.
 🥈 Silver Layer: Cleanses, standardizes, and normalizes data to prepare it for data analysis, ensuring high data quality.
@@ -13,8 +12,7 @@ The project adopts the Medallion Architecture, organizing data into three layers
 
 ============================================================
 
-📖 Project Overview
-This project focuses on:
+📖 Project Overview // This project focuses on:
 
 🪙 Data Architecture: Designing a modern data warehouse using the Medallion Architecture (Bronze, Silver, Gold layers) on Databricks.
 🪙 ETL Pipelines: Extracting, transforming, and loading data from source systems into Delta Lake tables using PySpark and Spark SQL.
@@ -23,29 +21,24 @@ This project focuses on:
 
 ============================================================
 
-🗂 Repository Structure
-The repository is organized into two main folders:
+🗂 Repository Structure // The repository is organized into two main folders:
 
 📂 data_warehouse: Contains materials for building and maintaining the data warehouse, including datasets, documentation, PySpark/Spark SQL scripts, and tests.
 📂 data_analytics: Contains resources for data analysis, including SQL scripts for exploratory data analysis (EDA) and advanced analytics to generate business insights.
 
 ============================================================
 
-🎯 Target Audience
-This repository is ideal for professionals and students aiming to demonstrate expertise in:
+🎯 Target Audience // This repository is ideal for professionals and students aiming to demonstrate expertise in:
 
-Spark SQL and PySpark Development
-Data Architecture with Medallion Architecture
-Data Engineering and ETL Pipeline Development
-Data Modeling with Star Schema
-Data Analytics and Business Intelligence
+🐍 Spark SQL and PySpark Development
+🏗️ Data Architecture with Medallion Architecture
+⚙️ Data Engineering and ETL Pipeline Development
+⭐ Data Modeling with Star Schema
+📊 Data Analytics and Business Intelligence
 
 ============================================================
 
-🛩 Data Engineering: Building the Data Warehouse
-Objective
-Create a modern data warehouse using Databricks, PySpark, and Delta Lake to consolidate sales data, enabling analytical reporting and informed decision-making.
-Specifications
+🛩 Data Engineering: Building the Data Warehouse //  Create a modern data warehouse using Databricks, PySpark, and Delta Lake to consolidate sales data, enabling analytical reporting and informed decision-making.
 
 🛸 Data Sources: Import data from ERP and CRM systems provided as CSV files.
 🛸 Data Quality: Address and resolve data quality issues (e.g., deduplication, null handling, standardization) before data analysis.
@@ -64,21 +57,17 @@ The data_warehouse folder contains:
 
 ============================================================
 
-📊 Data Analysis: BI, Analytics & Reporting
-Objective
-Develop Spark SQL-based data analytics to provide insights into:
+📊 Data Analysis: BI, Analytics & Reporting // Develop Spark SQL-based data analytics to provide insights into:
 
-Customer Behavior: Segment customers (e.g., VIP, Regular, New) based on spending and lifespan.
-Product Performance: Analyze product sales, cost ranges, and category contributions.
-Sales Trends: Identify temporal trends and key business metrics.
+👥 Customer Behavior: Segment customers (e.g., VIP, Regular, New) based on spending and lifespan.
+📦 Product Performance: Analyze product sales, cost ranges, and category contributions.
+📅 Sales Trends: Identify temporal trends and key business metrics.
 
-These insights deliver actionable metrics to support strategic decision-making.
+🎯 These insights deliver actionable metrics to support strategic decision-making.
 
 ============================================================
 
-📚 Analytics Resources
-📋 Datasets (Gold Layer Outputs)
-The final transformed and cleaned data products, stored as Delta Lake tables:
+📚 Analytics Resources // 📋 Datasets (Gold Layer Outputs) // The final transformed and cleaned data products, stored as Delta Lake tables:
 
 🏅 gold.dim_customers: Dimension table containing cleaned customer data (e.g., customer_key, first_name, last_name, country, gender, birthdate).
 🏅 gold.dim_products: Dimension table containing cleaned product data (e.g., product_key, product_name, category, subcategory, cost).
@@ -86,26 +75,13 @@ The final transformed and cleaned data products, stored as Delta Lake tables:
 
 ============================================================
 
-📑 Docs
-
-Data_Analytics_Roadmap: Documentation outlining the EDA and advanced analytics processes.
-
-🗂 The data_analytics Folder
-
-📂 SQL Exploratory Data Analysis (EDA): Scripts for initial data exploration to understand patterns and trends (e.g., exploratory_data_analysis.py).
-📂 Advanced Analytics Scripts: Scripts for in-depth data analysis, generating actionable insights (e.g., general_overview_advance_analytics_01.sql.py, advance_analytics_customers_report_02.sql.py, advance_analytics_products_report_03.sql.py).
-
-These files represent the business-ready outputs of the data warehouse, optimized for reporting and analytics using Spark SQL.
-
-============================================================
-
 🛠 Technologies Used
 
-Databricks: Platform for running PySpark and Spark SQL workloads.
-PySpark: For building scalable ETL pipelines.
-Spark SQL: For data transformations, modeling, and analytics.
-Delta Lake: For reliable and scalable data storage and management.
-Python: For scripting ETL processes and data validation logic.
+🔧 Databricks: Platform for running PySpark and Spark SQL workloads.
+🐍 PySpark: For building scalable ETL pipelines.
+📜 Spark SQL: For data transformations, modeling, and analytics.
+💾 Delta Lake: For reliable and scalable data storage and management.
+🐍 Python: For scripting ETL processes and data validation logic.
 
 ============================================================
 
