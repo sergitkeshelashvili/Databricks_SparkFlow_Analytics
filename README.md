@@ -27,3 +27,86 @@ The project adopts the **Medallion Architecture** with three layers:
 
 📌 **Architecture Diagram (placeholder)**  
 
+
+
+---
+
+## 📖 Project Highlights  
+
+- 🪙 **Data Architecture** – Medallion layers with Delta Lake storage.  
+- 🪙 **ETL Pipelines** – Built in PySpark & Spark SQL.  
+- 🪙 **Data Modeling** – Fact & dimension tables in a **star schema**.  
+- 🪙 **Analytics & BI** – SQL queries that generate insights for business stakeholders.  
+
+---
+
+## 🗂 Repository Structure  
+
+📂 data_warehouse/
+┣ 📂 datasets/ → Raw ERP & CRM CSV files
+┣ 📂 documentation/ → Data model & schema documentation
+┣ 📂 scripts/ → ETL code (bronze_layer.py, silver_layer.py, gold_layer.py)
+┣ 📂 tests/ → Data quality & pipeline validation
+
+📂 data_analytics/
+┣ 📂 sql/ → EDA & analytics SQL scripts
+┗ 📂 reports/ → Insights & BI reporting queries
+
+
+
+---
+
+## 🎯 Target Audience  
+
+This project is designed for **data engineers, analysts, and students** showcasing expertise in:  
+
+- 🐍 PySpark & Spark SQL Development  
+- 🏗️ Data Warehousing with Medallion Architecture  
+- ⚙️ ETL Pipeline Engineering  
+- ⭐ Star Schema Data Modeling  
+- 📊 Data Analytics & BI  
+
+---
+
+## 📊 Business Insights  
+
+Analytics & reporting focus on:  
+
+- 👥 **Customer Behavior** – Segmentation (VIP, Regular, New), retention, churn.  
+- 📦 **Product Performance** – Category contribution, sales vs. costs.  
+- 📅 **Sales Trends** – Seasonal patterns, regional metrics, growth tracking.  
+
+These insights support **strategic business decisions**.  
+
+---
+
+## 🛠 Technologies Used  
+
+- 🔧 **Databricks** – Unified data platform  
+- 🐍 **PySpark** – Scalable ETL pipelines  
+- 📜 **Spark SQL** – Transformations & analytics  
+- 💾 **Delta Lake** – Reliable, versioned storage  
+- 🐍 **Python** – Scripting & validation logic  
+
+---
+
+## 🛡️ License  
+
+Licensed under the **MIT License**.  
+You are free to use, modify, and distribute the code under the license terms.  
+
+---
+
+✨ With SparkFlow Analytics, raw ERP & CRM data is transformed into a **scalable, analytics-ready warehouse** that powers **data-driven business insights**.  
+
+
+
+
+
+
+
+
+
+
+
+
