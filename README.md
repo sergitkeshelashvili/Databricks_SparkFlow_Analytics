@@ -1,6 +1,6 @@
 ### Databricks SparkFlow Analytics 📊💸
 
-Welcome to the Databricks SparkFlow Analytics Project! 🚀 This portfolio project showcases a modern data warehousing and data analytics solution built on Databricks using PySpark, Spark SQL, and Delta Lake. It demonstrates best practices in data engineering, ETL pipeline development, data modeling, and business intelligence (BI), covering the entire process from building a scalable data warehouse to generating actionable business insights through data visualization and advanced analytics.
+Welcome to the Databricks SparkFlow Analytics Project! 🚀 This portfolio project showcases a modern data warehousing and data analytics solution built on Databricks using PySpark, Spark SQL, and Delta Lake. It demonstrates best practices in data engineering, ETL pipeline development, data modeling, and business intelligence (BI), covering the entire process from building a scalable data warehouse to generating actionable business insights through exploratory and advanced data analytics.
 
 ============================================================
 
