@@ -94,7 +94,6 @@ These insights support **strategic business decisions**.
 ## 🛡️ License  
 
 Licensed under the **MIT License**.  
-You are free to use, modify, and distribute the code under the license terms.  
 
 ---
 
