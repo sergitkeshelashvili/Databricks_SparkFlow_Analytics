@@ -5,7 +5,8 @@
 ![Delta Lake](https://img.shields.io/badge/Delta%20Lake-Storage-brightgreen)  
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)  
 
-A **modern data warehousing & analytics solution** built on **Databricks**, powered by **PySpark, Spark SQL, and Delta Lake**.  
+A **modern data lakehousing & analytics solution** built on **Databricks**, powered by **PySpark, Spark SQL, and Delta Lake**.  
+
 
 This project demonstrates end-to-end **data engineering and BI practices**:  
 
@@ -29,7 +30,7 @@ The project adopts the **Medallion Architecture** with three layers:
 
 ## 🏗️ Medallion Architecture Diagram
 
-![Medallion Architecture](./data_warehouse/docs/databricks_sparkflow_analytics_project.png)
+![Medallion Architecture](./data_warehouse/docs/data_lakehouse_project_architecture.png)
 
 
 ---
