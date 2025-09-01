@@ -107,7 +107,7 @@ Licensed under the **MIT License**.
 
 ---
 
-✨ With SparkFlow Analytics, raw ERP & CRM data is transformed into a **scalable, analytics-ready warehouse** that powers **data-driven business insights**.  
+✨ With SparkFlow Analytics, raw ERP & CRM data is transformed into a **scalable, analytics-ready lakehouse** that powers **data-driven business insights**.  
 
 
 
