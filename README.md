@@ -7,9 +7,6 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 
-Databricks SparkFlow Analytics 📊💸
-    
-
 A **modern data lakehouse & analytics solution** built on **Databricks**, powered by **PySpark, Spark SQL, and Delta Lake**.  
 
 
