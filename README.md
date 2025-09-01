@@ -46,14 +46,16 @@ The project adopts the **Medallion Architecture** with three layers:
 
 ## 🗂 Repository Structure  
 
-📂 data_lakehouse/
+📂 **data_lakehouse**/
+
 ┣ 📂 **datasource**/ → Raw ERP & CRM CSV files
 ┣ 📂 **schema_documentation**/ → Data model & schema documentations
 ┣ 📂 **ETL_scripts**/ → ETL code (bronze_layer.py, silver_layer.py, gold_layer.py)
-┣ 📂 **data_quality**_checks/ → Data quality & pipeline validation
+┣ 📂 **data_quality_checks**/ → Data quality & pipeline validation
 
 
 📂 **data_analytics**/
+
 ┣ 📂 **analytics_scripts** / exploratory_data_analysis (EDA) & advance_analytics
 ┣ 📂 **analytics_data_source** / (gold.dim_customers.csv, gold.dim_products.csv, gold.fact_sales.csv)
 ┣ 📂 **data_analytics_roadmap** / data_analytics_roadmap
