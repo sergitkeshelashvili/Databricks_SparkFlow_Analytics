@@ -60,7 +60,9 @@ The project adopts the **Medallion Architecture** with three layers:
 📂 **data_analytics**/
 
 ┣ 📂 **analytics_scripts** / → exploratory_data_analysis (EDA) & advance_analytics
+
 ┣ 📂 **analytics_data_source** / → (gold.dim_customers.csv, gold.dim_products.csv, gold.fact_sales.csv)
+
 ┣ 📂 **data_analytics_roadmap** / → data_analytics_roadmap
 
 
