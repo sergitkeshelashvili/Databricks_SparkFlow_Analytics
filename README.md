@@ -30,7 +30,7 @@ The project adopts the **Medallion Architecture** with three layers:
 
 ## 🏗️ Medallion Architecture Diagram
 
-![Medallion Architecture](./data_lakehouse/data_model & schema_documentation/data_lakehouse_project_architecture.png)
+![Medallion Architecture](./data_lakehouse/schema_documentation/data_lakehouse_project_architecture.png)
 
 
 ---
