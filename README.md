@@ -37,10 +37,10 @@ The project adopts the **Medallion Architecture** with three layers:
 
 ## 📖 Project Highlights  
 
-- 🪙 **Data Architecture** – Medallion layers with Delta Lake storage.  
-- 🪙 **ETL Pipelines** – Built in PySpark & Spark SQL.  
+- 🪙 **Data Architecture** – Medallion layers with **Delta Lake storage**.  
+- 🪙 **ETL Pipelines** – Built in **PySpark & Spark SQL**.  
 - 🪙 **Data Modeling** – Fact & dimension tables in a **star schema**.  
-- 🪙 **Analytics & BI** – SQL queries that generate insights for business stakeholders.  
+- 🪙 **Analytics & BI** – **Spark SQL** queries that generate insights for business stakeholders.  
 
 ---
 
