@@ -13,7 +13,7 @@ This project demonstrates end-to-end **data engineering and BI practices**:
 ✅ Scalable **data lakehouse** design  
 ✅ Automated **ETL pipelines**  
 ✅ **Star schema modeling** for analytics  
-✅ **Actionable insights** through SQL-based reporting  
+✅ **Actionable insights** through Spark SQL-based reporting  
 
 ---
 
