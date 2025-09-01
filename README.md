@@ -52,8 +52,10 @@ The project adopts the **Medallion Architecture** with three layers:
 ┣ 📂 tests/ → Data quality & pipeline validation
 
 📂 data_analytics/
-┣ 📂 sql/ → EDA & analytics SQL scripts
-┗ 📂 reports/ → Insights & BI reporting queries
+┣ 📂 Analytics scripts / exploratory_data_analysis (EDA) & advance_analytics
+┣ 📂 datasets / (gold.dim_customers.csv, gold.dim_products.csv, gold.fact_sales.csv)
+┣ 📂 docs / Data_Analytics_Roadmap
+
 
 ---
 
