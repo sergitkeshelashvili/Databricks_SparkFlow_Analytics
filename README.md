@@ -73,7 +73,7 @@ The project adopts the **Medallion Architecture** with three layers:
 This project is designed for **data engineers, analysts, and students** showcasing expertise in:  
 
 - 🐍 **PySpark & Spark SQL Development**  
-- 🏗️ **Data Warehousing with Medallion Architecture**  
+- 🏗️ **Data Lakehouse with Medallion Architecture**  
 - ⚙️ **ETL Pipeline Engineering** 
 - ⭐ **Star Schema Data Modeling** 
 - 📊 **Data Analytics & BI**  
