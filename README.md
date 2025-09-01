@@ -3,11 +3,6 @@
 ![Databricks](https://img.shields.io/badge/Platform-Databricks-orange?logo=databricks)  
 ![PySpark](https://img.shields.io/badge/PySpark-ETL-blue?logo=apachespark)  
 ![Delta Lake](https://img.shields.io/badge/Delta%20Lake-Storage-brightgreen)  
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)  
- 
-![Databricks](https://img.shields.io/badge/Platform-Databricks-orange?logo=databricks)  
-![PySpark](https://img.shields.io/badge/PySpark-ETL-blue?logo=apachespark)  
-![Delta Lake](https://img.shields.io/badge/Delta%20Lake-Storage-brightgreen)  
 ![Spark SQL](https://img.shields.io/badge/Spark%20SQL-Analytics-purple?logo=apachespark)  
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
