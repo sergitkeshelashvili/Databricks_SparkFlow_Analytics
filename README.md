@@ -13,7 +13,7 @@ A **modern data lakehouse & analytics solution** built on **Databricks**, powere
 This project demonstrates end-to-end **data engineering and BI practices**:  
 
 ✅ Scalable **data lakehouse** design  
-✅ Automated **ETL pipelines**  
+✅ Automated **ETL pipelines** with **Databricks Workflows**
 ✅ **Star schema modeling** for analytics  
 ✅ **Actionable insights** through Spark SQL-based reporting  
 
@@ -34,6 +34,23 @@ The project adopts the **Medallion Architecture** with three layers:
 
 ![Medallion Architecture](./data_lakehouse/schema_documentation/data_lakehouse_project_architecture.png)
 
+
+---
+
+## Pipeline Automation 🚀
+
+This project includes automated workflows in Databricks to orchestrate the Medallion Architecture ETL pipeline, data quality checks, and advanced analytics. The workflow ensures seamless execution from raw data ingestion (Bronze) to business-ready insights (Gold), with error handling and logging.
+
+![Databricks Workflow Automation](data_lakehouse/schema_documentation/databricks_workflow_automation.png)
+
+### Workflow Details
+- **Bronze Layer**: Ingests raw CSV data.
+- **Silver Layer**: Cleans and transforms data, followed by quality checks.
+- **Gold Layer**: Creates star schema views, with quality validation.
+- **Analytics**: Runs exploratory and advanced analytics.
+
+
+This automation enhances scalability and reliability, aligning with production-grade data engineering practices.
 
 ---
 
@@ -76,7 +93,7 @@ This project is designed for **data engineers, analysts, and students** showcasi
 
 - 🐍 **PySpark & Spark SQL Development**  
 - 🏗️ **Data Lakehouse with Medallion Architecture**  
-- ⚙️ **ETL Pipeline Engineering** 
+- ⚙️ **Automated ETL Pipeline Engineering** 
 - ⭐ **Star Schema Data Modeling** 
 - 📊 **Data Analytics & BI**  
 
