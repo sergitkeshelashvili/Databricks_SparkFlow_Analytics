@@ -32,6 +32,7 @@ The project adopts the **Medallion Architecture** with three layers:
 
 ## 🏗️ Medallion Architecture Diagram
 
+
 ![Medallion Architecture](./data_lakehouse/schema_documentation/data_lakehouse_project_architecture.png)
 
 
@@ -40,6 +41,7 @@ The project adopts the **Medallion Architecture** with three layers:
 ## Pipeline Automation 🚀
 
 This project includes **automated workflows** in **Databricks** to orchestrate the **Medallion Architecture ETL pipeline**, **data quality checks**, and **advanced analytics**. The workflow ensures seamless execution from raw data ingestion (Bronze) to business-ready insights (Gold), with error handling and logging.
+
 
 ![Databricks Workflow Automation](./data_lakehouse/schema_documentation/databricks_workflow_automation.png)
 
