@@ -7,7 +7,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 
-A **modern data lakehouse & analytics solution** built on **Databricks**, powered by **PySpark, Spark SQL, and Delta Lake**.  
+A **modern data lakehouse & analytics solution** built on **Databricks**, powered by **PySpark, Spark SQL, and Delta Lake** with **automated workflows** for scalable and reliable pipeline execution.
 
 
 This project demonstrates end-to-end **data engineering and BI practices**:  
@@ -41,7 +41,7 @@ The project adopts the **Medallion Architecture** with three layers:
 
 This project includes automated workflows in Databricks to orchestrate the Medallion Architecture ETL pipeline, data quality checks, and advanced analytics. The workflow ensures seamless execution from raw data ingestion (Bronze) to business-ready insights (Gold), with error handling and logging.
 
-![Databricks Workflow Automation](data_lakehouse/schema_documentation/databricks_workflow_automation.png)
+![Databricks Workflow Automation](./data_lakehouse/schema_documentation/databricks_workflow_automation.png)
 
 ### Workflow Details
 - **Bronze Layer**: Ingests raw CSV data.
@@ -57,7 +57,7 @@ This automation enhances scalability and reliability, aligning with production-g
 ## 📖 Project Highlights  
 
 - 🪙 **Data Architecture** – Medallion layers with **Delta Lake storage**.  
-- 🪙 **ETL Pipelines** – Built in **PySpark & Spark SQL**.  
+- 🪙 **Automated ETL Pipelines** – Built in **PySpark & Spark SQL**.  
 - 🪙 **Data Modeling** – Fact & dimension tables in a **star schema**.  
 - 🪙 **Analytics & BI** – **Spark SQL** queries that generate insights for business stakeholders.  
 
@@ -114,7 +114,7 @@ These insights support **strategic business decisions**.
 ## 🛠 Technologies Used  
 
 - 🔧 **Databricks** – Unified data platform  
-- 🐍 **PySpark** – Scalable ETL pipelines  
+- 🐍 **PySpark** – Scalable automated ETL pipelines  
 - 📜 **Spark SQL** – Transformations & analytics  
 - 💾 **Delta Lake** – Reliable, versioned storage  
 
