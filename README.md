@@ -12,8 +12,9 @@ A **modern data lakehouse & analytics solution** built on **Databricks**, powere
 This project demonstrates **end-to-end data engineering and BI practices**:  
 
 ✅ Scalable **data lakehouse** design  
-✅ Automated **ETL pipelines** with **Databricks Workflows**
-✅ **Star schema modeling** for analytics & **Actionable insights** through **Spark SQL** based reporting  
+✅ Automated **ETL pipelines** with **Databricks Workflows** 
+✅ **Star schema modeling** for analytics
+✅ **Actionable insights** through **Spark SQL** based reporting  
 
 ---
 
