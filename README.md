@@ -9,12 +9,11 @@
 A **modern data lakehouse & analytics solution** built on **Databricks**, powered by **PySpark, Spark SQL, and Delta Lake** with **automated workflows** for scalable and reliable pipeline execution.
 
 
-This project demonstrates end-to-end **data engineering and BI practices**:  
+This project demonstrates **end-to-end data engineering and BI practices**:  
 
 ✅ Scalable **data lakehouse** design  
 ✅ Automated **ETL pipelines** with **Databricks Workflows**
-✅ **Star schema modeling** for analytics  
-✅ **Actionable insights** through **Spark SQL** based reporting  
+✅ **Star schema modeling** for analytics & **Actionable insights** through **Spark SQL** based reporting  
 
 ---
 
