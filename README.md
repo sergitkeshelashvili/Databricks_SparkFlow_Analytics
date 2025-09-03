@@ -6,7 +6,6 @@
 ![Spark SQL](https://img.shields.io/badge/Spark%20SQL-Analytics-purple?logo=apachespark)  
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-
 A **modern data lakehouse & analytics solution** built on **Databricks**, powered by **PySpark, Spark SQL, and Delta Lake** with **automated workflows** for scalable and reliable pipeline execution.
 
 
