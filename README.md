@@ -116,6 +116,11 @@ Analytics & reporting focus on:
 
 These insights support **strategic business decisions**.  
 
+
+  ### Business Performance Dashboard Example:  
+
+![Business Performance Dashboard](./data_visualization/business_performance.png)
+
 ---
 
 ## 🛠 Technologies Used  
@@ -125,9 +130,6 @@ These insights support **strategic business decisions**.
 - 📜 **Spark SQL** – Transformations & analytics  
 - 💾 **Delta Lake** – Reliable, versioned storage
 
-  ### Business Performance Dashboard Example:  
-
-![Business Performance Dashboard](./data_visualization/business_performance.png)
 
 ---
 
