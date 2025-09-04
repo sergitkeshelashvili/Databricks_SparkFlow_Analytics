@@ -4,6 +4,7 @@
 ![PySpark](https://img.shields.io/badge/PySpark-ETL-blue?logo=apachespark)  
 ![Delta Lake](https://img.shields.io/badge/Delta%20Lake-Storage-brightgreen)  
 ![Spark SQL](https://img.shields.io/badge/Spark%20SQL-Analytics-purple?logo=apachespark)  
+![Tableau](https://img.shields.io/badge/Tableau-Visualization-red?logo=tableau)  
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 A **modern data lakehouse & analytics solution** built on **Databricks**, powered by **PySpark, Spark SQL, and Delta Lake** with **automated workflows** for scalable and reliable pipeline execution.
@@ -117,7 +118,7 @@ Analytics & reporting focus on:
 These insights support **strategic business decisions**.  
 
 
-  ### Business Performance Dashboard Example:  
+  ### Business Performance Dashboard Example: 
 
 ![Business Performance Dashboard](./data_visualization/business_performance.png)
 
