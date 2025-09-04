@@ -7,7 +7,8 @@
 ![Tableau](https://img.shields.io/badge/Tableau-Visualization-red?logo=tableau)  
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-A **modern data lakehouse & analytics solution** built on **Databricks**, powered by **PySpark, Spark SQL, and Delta Lake** with **automated workflows** for scalable and reliable pipeline execution.
+A **modern data lakehouse & analytics solution** built on **Databricks**, powered by **PySpark, Spark SQL, and Delta Lake** with **automated workflows** for scalable, reliable pipeline execution, seamlessly integrated with **Tableau** to deliver compelling and actionable **business visualizations**.
+
 
 
 This project demonstrates **end-to-end data engineering and BI practices**:  
@@ -15,7 +16,7 @@ This project demonstrates **end-to-end data engineering and BI practices**:
 ✅ Scalable **data lakehouse** design  
 ✅ Automated **ETL pipelines** with **Databricks Workflows**  
 ✅ **Star schema modeling** for analytics  
-✅ **Actionable insights** through **Spark SQL** based reporting  
+✅ **Actionable insights** through **Spark SQL** based reporting and **Tableau visualizations**
 
 ---
 
@@ -103,7 +104,7 @@ This project is designed for **data engineers, analysts, and students** showcasi
 - 🏗️ **Data Lakehouse with Medallion Architecture**  
 - ⚙️ **Automated ETL Pipeline Engineering** 
 - ⭐ **Star Schema Data Modeling** 
-- 📊 **Data Analytics & BI**  
+- 📊 **Data Analytics & BI** with **Tableau**
 
 ---
 
@@ -115,7 +116,7 @@ Analytics & reporting focus on:
 - 📦 **Product Performance** – Category contribution, sales vs. costs.  
 - 📅 **Sales Trends** – Seasonal patterns, regional metrics, growth tracking.  
 
-These insights support **strategic business decisions**.  
+These insights are visualized through **Tableau** dashboards, supporting **strategic business decisions**.  
 
 
   ### Business Performance Dashboard Example: 
@@ -130,6 +131,7 @@ These insights support **strategic business decisions**.
 - 🐍 **PySpark** – Scalable automated ETL pipelines  
 - 📜 **Spark SQL** – Transformations & analytics  
 - 💾 **Delta Lake** – Reliable, versioned storage
+- 📊 **Tableau** – Visualization for business insights
 
 
 ---
@@ -140,7 +142,7 @@ Licensed under the **MIT License**.
 
 ---
 
-✨ With SparkFlow Analytics, raw ERP & CRM data is transformed into a **scalable, analytics-ready lakehouse** that powers **data-driven business insights**.  
+✨ With SparkFlow Analytics, raw ERP & CRM data is transformed into a **scalable, analytics-ready lakehouse** that powers **data-driven business insights** through **PySpark**, **Spark SQL**, **Delta Lake**, and **Tableau visualizations**.
 
 
 
