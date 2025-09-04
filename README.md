@@ -86,6 +86,11 @@ This automation enhances scalability and reliability, aligning with production-g
 
 ┣ 📂 **data_analytics_roadmap** / → data_analytics_roadmap
 
+📂 **data_visualisation/**  
+
+┣ 📄 **business_performance.twbx** → Tableau packaged workbook for business performance dashboard  
+┣ 🖼️ **business_performance.png** → Snapshot of the visualization  
+
 
 ---
 
@@ -118,7 +123,11 @@ These insights support **strategic business decisions**.
 - 🔧 **Databricks** – Unified data platform  
 - 🐍 **PySpark** – Scalable automated ETL pipelines  
 - 📜 **Spark SQL** – Transformations & analytics  
-- 💾 **Delta Lake** – Reliable, versioned storage  
+- 💾 **Delta Lake** – Reliable, versioned storage
+
+  ### Business Performance Dashboard Example:  
+
+![Business Performance Dashboard](./data_visualization/business_performance.png)
 
 ---
 
