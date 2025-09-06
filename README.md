@@ -28,7 +28,7 @@ The project adopts the **Medallion Architecture** with three layers:
 |---------|---------|
 | 🥉 **Bronze** | Raw ingested data from ERP/CRM CSV files with **incremental loading** for efficient processing. |
 | 🥈 **Silver** | Cleaned & standardized data ensuring quality. |
-| 🥇 **Gold**   | Business-ready, star schema data for BI & reporting  with robust data validation. |
+| 🥇 **Gold**   | Business-ready, star schema data for BI & reporting  with **robust data validation**. |
 
 
 ## 🏗️ Medallion Architecture Diagram
