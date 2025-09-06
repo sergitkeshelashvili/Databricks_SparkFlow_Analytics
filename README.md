@@ -46,6 +46,8 @@ This project includes **automated workflows** in **Databricks** to orchestrate t
 
 ![Databricks Workflow Automation](./data_lakehouse/schema_documentation/databricks_workflow_automation.png)
 
+---
+
 ### Workflow Details
 **Bronze Layer**: **Incremental loading** efficiently processes large-scale ERP/CRM data, reducing costs and enabling near **real-time** updates. Ingests CSV data using **Delta Lake MERGE**. Key features:
 
@@ -68,11 +70,11 @@ This automation ensures scalability and reliability for **production-grade data 
 ---
 
 ## 📖 Project Highlights
-🪙 **Data Architecture** – Medallion layers with **Delta Lake storage** for reliable data management.
-🪙 **Incremental Loading** – Optimizes Bronze layer ingestion by processing only new or updated data, reducing compute overhead and enabling scalable **Automated ETL pipelines**.
-🪙 **Robust Data Validation** – Utilizes **GoldenLayerDataValidation class** in the Gold layer to ensure clean, deduplicated data for accurate analytics and reporting.
-🪙 **Automated ETL Pipelines** – Built in **PySpark & Spark SQL**.
-🪙 **Data Modeling** – Fact & dimension tables in a **star schema**.  
+- 🪙 **Data Architecture** – Medallion layers with **Delta Lake storage** for reliable data management.
+- 🪙 **Incremental Loading** – Optimizes Bronze layer ingestion by processing only new or updated data, reducing compute overhead and enabling scalable **Automated ETL pipelines**.
+- 🪙 **Robust Data Validation** – Utilizes **GoldenLayerDataValidation class** in the Gold layer to ensure clean, deduplicated data for accurate analytics and reporting.
+- 🪙 **Automated ETL Pipelines** – Built in **PySpark & Spark SQL**.
+- 🪙 **Data Modeling** – Fact & dimension tables in a **star schema**.  
 
 ---
 
