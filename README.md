@@ -46,7 +46,7 @@ This project includes **automated workflows** in **Databricks** to orchestrate t
 
 ---
 
-### Workflow Details
+### 🛠️ Workflow Details
 🥉 **Bronze Layer**: **Incremental loading** efficiently processes large-scale ERP/CRM data, reducing costs and enabling near **real-time** updates. Ingests CSV data using **Delta Lake MERGE**. Key features:
 
 - **Upsert** via unique keys (merge_key).
