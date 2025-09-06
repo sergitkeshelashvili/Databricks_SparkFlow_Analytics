@@ -48,17 +48,14 @@ This project includes **automated workflows** in **Databricks** to orchestrate t
 
 ### Workflow Details
 - **Bronze Layer**: **Incremental loading** is critical for efficiently processing large-scale ERP and CRM data, reducing compute costs and enabling near real-time updates. It ingests CSV data incrementally for tables like crm_cust_info, crm_prd_info, crm_sales_details, erp_loc_a101, erp_cust_az12, and erp_px_cat_g1v2 using Delta Lake MERGE operations. Key features:
-  
   - **Upsert** based on unique keys (merge_key) for efficient updates and inserts.
   - **Deduplication** using load_timestamp or source-specific timestamp columns (e.g., cst_create_date).
   - Comprehensive error handling and load duration logging for monitoring.
     
 - **Silver Layer**: Cleans and transforms data, followed by quality checks to ensure consistency.
-- 
 - **Gold Layer**: Creates star schema tables (dim_customers, dim_products, fact_sales) with **robust data validation** using the GoldenLayerDataValidation class. This class ensures data quality by:
    - Removing rows with null values to maintain integrity.
-   - Deduplicating records based on key columns (e.g., cst_id, prd_id) to prevent redundancy.
-     
+   - Deduplicating records based on key columns (e.g., cst_id, prd_id) to prevent redundancy. 
 - **Analytics**: Runs exploratory and advanced analytics.
 
 
