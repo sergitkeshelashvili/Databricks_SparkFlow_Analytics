@@ -55,7 +55,7 @@ This project includes **automated workflows** in **Databricks** to orchestrate t
 
 **Silver Layer**: Cleans, transforms, and quality-checks data for consistency.
 
-**Gold Layer**: Builds star schema tables (dim_customers, dim_products, fact_sales) with robust validation via GoldenLayerDataValidation class, ensuring:
+**Gold Layer**: Builds star schema tables (dim_customers, dim_products, fact_sales) with robust validation via **GoldenLayerDataValidation class**, ensuring:
 
 - No null values for data integrity.
 - Deduplication on keys like cst_id, prd_id.
@@ -71,7 +71,7 @@ This automation ensures scalability and reliability for **production-grade data 
 
 - 🪙 **Data Architecture** – Medallion layers with **Delta Lake storage** for reliable data management.
 - 🪙 **Incremental Loading** – Optimizes Bronze layer ingestion by processing only new or updated data, reducing compute overhead and enabling scalable **Automated ETL pipelines**.
-- 🪙 **Robust Data Validation** – Utilizes GoldenLayerDataValidation class in the Gold layer to ensure clean, deduplicated data for accurate analytics and reporting.
+- 🪙 **Robust Data Validation** – Utilizes **GoldenLayerDataValidation class** in the Gold layer to ensure clean, deduplicated data for accurate analytics and reporting.
 - 🪙 **Automated ETL Pipelines** – Built in **PySpark & Spark SQL**.  
 - 🪙 **Data Modeling** – Fact & dimension tables in a **star schema**.  
 
