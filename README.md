@@ -47,7 +47,7 @@ This project includes **automated workflows** in **Databricks** to orchestrate t
 ![Databricks Workflow Automation](./data_lakehouse/schema_documentation/databricks_workflow_automation.png)
 
 ### Workflow Details
-**Bronze Layer**: **Incremental loading** efficiently processes large-scale ERP/CRM data, reducing costs and enabling near real-time updates. Ingests CSV data for tables like crm_cust_info, crm_prd_info, crm_sales_details, erp_loc_a101, erp_cust_az12, and erp_px_cat_g1v2 using **Delta Lake MERGE**. Key features:
+**Bronze Layer**: **Incremental loading** efficiently processes large-scale ERP/CRM data, reducing costs and enabling near **real-time** updates. Ingests CSV data for tables like crm_cust_info, crm_prd_info, crm_sales_details, erp_loc_a101, erp_cust_az12, and erp_px_cat_g1v2 using **Delta Lake MERGE**. Key features:
 
 - **Upsert** via unique keys (merge_key).
 - **Deduplication** using load_timestamp or columns like cst_create_date.
@@ -55,12 +55,12 @@ This project includes **automated workflows** in **Databricks** to orchestrate t
 
 **Silver Layer**: Cleans, transforms, and quality-checks data for consistency.
 
-**Gold Layer**: Builds star schema tables (dim_customers, dim_products, fact_sales) with robust validation via **GoldenLayerDataValidation class**, ensuring:
+**Gold Layer**: Builds star schema tables (dim_customers, dim_products, fact_sales) with robust data validation via **GoldenLayerDataValidation class**, ensuring:
 
 - No null values for data integrity.
 - Deduplication on keys like cst_id, prd_id.
 
-Analytics: Performs exploratory and advanced analytics.
+**Analytics**: Performs exploratory and advanced analytics.
 
 This automation ensures scalability and reliability for **production-grade data pipelines**.
 
@@ -69,11 +69,11 @@ This automation ensures scalability and reliability for **production-grade data 
 
 ## 📖 Project Highlights  
 
-- 🪙 **Data Architecture** – Medallion layers with **Delta Lake storage** for reliable data management.
-- 🪙 **Incremental Loading** – Optimizes Bronze layer ingestion by processing only new or updated data, reducing compute overhead and enabling scalable **Automated ETL pipelines**.
-- 🪙 **Robust Data Validation** – Utilizes **GoldenLayerDataValidation class** in the Gold layer to ensure clean, deduplicated data for accurate analytics and reporting.
-- 🪙 **Automated ETL Pipelines** – Built in **PySpark & Spark SQL**.  
-- 🪙 **Data Modeling** – Fact & dimension tables in a **star schema**.  
+🪙 **Data Architecture** – Medallion layers with **Delta Lake storage** for reliable data management.
+🪙 **Incremental Loading** – Optimizes Bronze layer ingestion by processing only new or updated data, reducing compute overhead and enabling scalable **Automated ETL pipelines**.
+🪙 **Robust Data Validation** – Utilizes **GoldenLayerDataValidation class** in the Gold layer to ensure clean, deduplicated data for accurate analytics and reporting.
+🪙 **Automated ETL Pipelines** – Built in **PySpark & Spark SQL**.  
+🪙 **Data Modeling** – Fact & dimension tables in a **star schema**.  
 
 ---
 
