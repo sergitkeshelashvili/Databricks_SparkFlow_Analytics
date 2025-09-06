@@ -9,8 +9,6 @@
 
 A **modern data lakehouse & analytics solution** built on **Databricks**, powered by **PySpark, Spark SQL, and Delta Lake** with **automated workflows** for scalable, reliable pipeline execution, seamlessly integrated with **Tableau** to deliver compelling and actionable **business visualizations**.
 
-
-
 This project demonstrates **end-to-end data engineering and BI practices**:  
 
 ✅ Scalable **data lakehouse** design  
@@ -49,20 +47,20 @@ This project includes **automated workflows** in **Databricks** to orchestrate t
 ---
 
 ### Workflow Details
-**Bronze Layer**: **Incremental loading** efficiently processes large-scale ERP/CRM data, reducing costs and enabling near **real-time** updates. Ingests CSV data using **Delta Lake MERGE**. Key features:
+🥉 **Bronze Layer**: **Incremental loading** efficiently processes large-scale ERP/CRM data, reducing costs and enabling near **real-time** updates. Ingests CSV data using **Delta Lake MERGE**. Key features:
 
 - **Upsert** via unique keys (merge_key).
 - **Deduplication** using load_timestamp or columns like cst_create_date.
 - Error handling and load duration logging.
 
-**Silver Layer**: Cleans, transforms, and quality-checks data for consistency.
+🥈 **Silver Layer**: Cleans, transforms, and quality-checks data for consistency.
 
-**Gold Layer**: Builds star schema tables (dim_customers, dim_products, fact_sales) with robust data validation via **GoldenLayerDataValidation class**, ensuring:
+🥇 **Gold Layer**: Builds star schema tables (dim_customers, dim_products, fact_sales) with robust data validation via **GoldenLayerDataValidation class**, ensuring:
 
 - No null values for data integrity.
 - Deduplication on keys like cst_id, prd_id.
 
-**Analytics**: Performs exploratory and advanced analytics.
+📊 **Analytics**: Performs exploratory and advanced analytics.
 
 This automation ensures scalability and reliability for **production-grade data pipelines**.
 
