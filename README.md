@@ -26,9 +26,9 @@ The project adopts the **Medallion Architecture** with three layers:
 
 | Layer   | Purpose |
 |---------|---------|
-| 🥉 **Bronze** | Raw ingested data from ERP/CRM CSV files. |
+| 🥉 **Bronze** | Raw ingested data from ERP/CRM CSV files with **incremental loading** for efficient processing. |
 | 🥈 **Silver** | Cleaned & standardized data ensuring quality. |
-| 🥇 **Gold**   | Business-ready, star schema data for BI & reporting. |
+| 🥇 **Gold**   | Business-ready, star schema data for BI & reporting  with robust data validation. |
 
 
 ## 🏗️ Medallion Architecture Diagram
@@ -47,9 +47,14 @@ This project includes **automated workflows** in **Databricks** to orchestrate t
 ![Databricks Workflow Automation](./data_lakehouse/schema_documentation/databricks_workflow_automation.png)
 
 ### Workflow Details
-- **Bronze Layer**: Ingests raw CSV data.
-- **Silver Layer**: Cleans and transforms data, followed by quality checks.
-- **Gold Layer**: Creates star schema views, with quality validation.
+- **Bronze Layer**: **Incremental loading** is critical for efficiently processing large-scale ERP and CRM data, reducing compute costs and enabling near real-time updates. It ingests CSV data incrementally for tables like crm_cust_info, crm_prd_info, crm_sales_details, erp_loc_a101, erp_cust_az12, and erp_px_cat_g1v2 using Delta Lake MERGE operations. Key features:
+  - **Upsert** based on unique keys (merge_key) for efficient updates and inserts.
+  - **Deduplication** using load_timestamp or source-specific timestamp columns (e.g., cst_create_date).
+  - Comprehensive error handling and load duration logging for monitoring.
+- **Silver Layer**: Cleans and transforms data, followed by quality checks to ensure consistency.
+- **Gold Layer**: Creates star schema tables (dim_customers, dim_products, fact_sales) with **robust data validation** using the GoldenLayerDataValidation class. This class ensures data quality by:
+   - Removing rows with null values to maintain integrity.
+   - Deduplicating records based on key columns (e.g., cst_id, prd_id) to prevent redundancy. 
 - **Analytics**: Runs exploratory and advanced analytics.
 
 
@@ -59,10 +64,11 @@ This automation enhances scalability and reliability, aligning with production-g
 
 ## 📖 Project Highlights  
 
-- 🪙 **Data Architecture** – Medallion layers with **Delta Lake storage**.  
+- 🪙 **Data Architecture** – Medallion layers with **Delta Lake storage** for reliable data management.
+- 🪙 **Incremental Loading** – Optimizes Bronze layer ingestion by processing only new or updated data, reducing compute overhead and enabling scalable **Automated ETL pipelines**.
+- 🪙 **Robust Data Validation** – Utilizes GoldenLayerDataValidation class in the Gold layer to ensure clean, deduplicated data for accurate analytics and reporting.
 - 🪙 **Automated ETL Pipelines** – Built in **PySpark & Spark SQL**.  
 - 🪙 **Data Modeling** – Fact & dimension tables in a **star schema**.  
-- 🪙 **Analytics & BI** – **Spark SQL** queries that generate insights for business stakeholders.  
 
 ---
 
@@ -74,7 +80,7 @@ This automation enhances scalability and reliability, aligning with production-g
 
 ┣ 📂 **schema_documentation**/ → Data model & schema documentations
 
-┣ 📂 **ETL_scripts**/ → ETL code (bronze_layer.py, silver_layer.py, gold_layer.py)
+┣ 📂 **ETL_scripts**/ → ETL code (bronze_layer.py, incremental_bronze.py, silver_layer.py, gold_layer.py)
 
 ┣ 📂 **data_quality_checks**/ → Data quality & pipeline validation
 
@@ -143,15 +149,4 @@ Licensed under the **MIT License**.
 ---
 
 ✨ With SparkFlow Analytics, raw ERP & CRM data is transformed into a **scalable, analytics-ready lakehouse** that powers **data-driven business insights** through **PySpark**, **Spark SQL**, **Delta Lake**, and **Tableau visualizations**.
-
-
-
-
-
-
-
-
-
-
-
 
