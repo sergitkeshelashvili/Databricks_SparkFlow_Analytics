@@ -68,11 +68,10 @@ This automation ensures scalability and reliability for **production-grade data 
 ---
 
 ## 📖 Project Highlights  
-
 🪙 **Data Architecture** – Medallion layers with **Delta Lake storage** for reliable data management.
 🪙 **Incremental Loading** – Optimizes Bronze layer ingestion by processing only new or updated data, reducing compute overhead and enabling scalable **Automated ETL pipelines**.
 🪙 **Robust Data Validation** – Utilizes **GoldenLayerDataValidation class** in the Gold layer to ensure clean, deduplicated data for accurate analytics and reporting.
-🪙 **Automated ETL Pipelines** – Built in **PySpark & Spark SQL**.  
+🪙 **Automated ETL Pipelines** – Built in **PySpark & Spark SQL**.
 🪙 **Data Modeling** – Fact & dimension tables in a **star schema**.  
 
 ---
@@ -109,13 +108,12 @@ This automation ensures scalability and reliability for **production-grade data 
 
 ## 🎯 Target Audience  
 
-This project is designed for **data engineers, analysts, and students** showcasing expertise in:  
-
-- 🐍 **PySpark & Spark SQL Development**  
-- 🏗️ **Data Lakehouse with Medallion Architecture**  
-- ⚙️ **Automated ETL Pipeline Engineering** 
-- ⭐ **Star Schema Data Modeling** 
-- 📊 **Data Analytics & BI** with **Tableau**
+This project is designed for **data engineers, analysts, and students** showcasing expertise in:
+🐍 **PySpark & Spark SQL Development**
+🏗️ **Data Lakehouse with Medallion Architecture**
+⚙️ **Automated ETL Pipeline Engineering**
+⭐ **Star Schema Data Modeling**
+📊 **Data Analytics & BI** with **Tableau**
 
 ---
 
