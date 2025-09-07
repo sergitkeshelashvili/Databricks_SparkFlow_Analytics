@@ -84,7 +84,7 @@ This automation ensures **scalable, reliable, and near real-time data pipelines*
 
 ┣ 📂 **schema_documentation**/ → Data model & schema documentations
 
-┣ 📂 **ETL_scripts**/ → ETL code (bronze_layer.py`, `incremental_bronze.py`, `streaming_bronze.py`, `silver_layer.py`, `gold_layer.py`)
+┣ 📂 **ETL_scripts**/ → ETL code (`bronze_layer.py`, `incremental_bronze.py`, `streaming_bronze.py`, `silver_layer.py`, `gold_layer.py`)
 
 ┣ 📂 **data_quality_checks**/ → Data quality & pipeline validation
 
