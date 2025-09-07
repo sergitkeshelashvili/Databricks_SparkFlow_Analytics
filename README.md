@@ -109,11 +109,11 @@ This automation ensures **scalable, reliable, and near real-time data pipelines*
 ## 🎯 Target Audience  
 
 This project is designed for **data engineers, analysts, and students** showcasing expertise in:
-🐍 **PySpark & Spark SQL Development**
-🏗️ **Data Lakehouse with Medallion Architecture**
-⚙️ **Automated ETL Pipeline Engineering (Streaming & Batch)**
-⭐ **Star Schema Data Modeling**
-📊 **Data Analytics & BI** with **Tableau**
+- 🐍 **PySpark & Spark SQL Development**
+- 🏗️ **Data Lakehouse with Medallion Architecture**
+- ⚙️ **Automated ETL Pipeline Engineering (Streaming & Batch)**
+- ⭐ **Star Schema Data Modeling**
+- 📊 **Data Analytics & BI** with **Tableau**
 
 ---
 
