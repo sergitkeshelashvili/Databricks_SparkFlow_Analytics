@@ -69,7 +69,7 @@ This automation ensures **scalable, reliable, and near real-time data pipelines*
 
 ## 📖 Project Highlights
 - 🪙 **Data Architecture** – Medallion layers with **Delta Lake storage** for reliable data management.
-- 🪙 **Streaming & Batch Ingestion**: Combines **real-time streaming** (`streaming_bronze.py`) and **incremental batch processing** (`incremental_bronze.py`) for flexible, cost-efficient data ingestion.
+- 🪙 **Batch & Streaming Ingestion**: Combines **incremental batch processing** (`incremental_bronze.py`) and **real-time streaming** (`streaming_bronze.py`) for flexible, cost-efficient data ingestion.
 - 🪙 **Robust Data Validation** – Utilizes **GoldenLayerDataValidation class** in the Gold layer to ensure clean, deduplicated data for accurate analytics and reporting.
 - 🪙 **Automated ETL Pipelines** – Built in **PySpark & Spark SQL**.
 - 🪙 **Data Modeling** – Fact & dimension tables in a **star schema**.  
