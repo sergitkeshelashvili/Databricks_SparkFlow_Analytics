@@ -46,7 +46,7 @@ This project includes **automated workflows** in **Databricks** to orchestrate t
 ---
 
 ### 🛠️ Workflow Details
-- **🥉 Bronze Layer**: Ingests raw ERP/CRM data using **Delta Lake MERGE** operations.
+- **🥉Bronze Layer**: Ingests raw ERP/CRM data using **Delta Lake MERGE** operations.
   - **Batch Ingestion**: Handles large-scale data efficiently with incremental loading (`incremental_bronze.py`).  
   - Key features:  
     - Upserts via unique keys (e.g., `cst_id`, `prd_key`).  
